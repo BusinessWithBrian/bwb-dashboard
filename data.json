@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T18:23:00-08:00",
+  "lastUpdated": "2026-02-13T18:35:00-08:00",
   "projects": [
     {
       "id": "style-framework",
@@ -50,8 +50,8 @@
     {
       "id": "market-intelligence",
       "name": "Market Intelligence Engine",
-      "status": "active",
-      "progress": 75,
+      "status": "complete",
+      "progress": 100,
       "category": "Intelligence",
       "steps": [
         {"name": "Macro Regime Classifier", "status": "done"},
@@ -61,9 +61,9 @@
         {"name": "Investor mental models (6 biases + 5 narratives)", "status": "done"},
         {"name": "Historical pattern library (11 episodes)", "status": "done"},
         {"name": "Sentiment cycle framework (8 stages + current assessment)", "status": "done"},
-        {"name": "Signal detection & alerts", "status": "pending"},
-        {"name": "Geopolitical forces framework", "status": "pending"},
-        {"name": "Integration into weekly idea board", "status": "pending"}
+        {"name": "Signal detection & alert system (RED/AMBER/GREEN)", "status": "done"},
+        {"name": "Geopolitical forces (7 themes, risk 4.5/10)", "status": "done"},
+        {"name": "Master index + weekly maintenance checklist", "status": "done"}
       ]
     },
     {
@@ -186,8 +186,8 @@
   ],
   "stats": {
     "totalProjects": 12,
-    "completed": 4,
-    "active": 4,
+    "completed": 5,
+    "active": 3,
     "queued": 4,
     "scriptsAnalyzed": 311,
     "frameworksBuilt": 9,
