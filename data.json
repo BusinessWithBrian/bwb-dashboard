@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T18:41:00-08:00",
+  "lastUpdated": "2026-02-13T18:56:00-08:00",
   "projects": [
     {
       "id": "style-framework",
@@ -128,15 +128,15 @@
     {
       "id": "competitor-analysis",
       "name": "Competitor Video Analysis (Round 2)",
-      "status": "active",
-      "progress": 80,
+      "status": "complete",
+      "progress": 100,
       "category": "Intelligence",
       "steps": [
         {"name": "Pull 233 rows from Google Sheet", "status": "done"},
         {"name": "Filter to 120 recent videos (past 2 weeks)", "status": "done"},
         {"name": "Pattern analysis & trending topics", "status": "done"},
         {"name": "Fill AI Video Angle columns (110 rows)", "status": "done"},
-        {"name": "Gap opportunity report for Brian", "status": "pending"}
+        {"name": "Competitor transcript analysis (10 videos, 7 channels)", "status": "done"}
       ]
     },
     {
@@ -186,11 +186,11 @@
   ],
   "stats": {
     "totalProjects": 12,
-    "completed": 6,
-    "active": 2,
+    "completed": 7,
+    "active": 1,
     "queued": 4,
     "scriptsAnalyzed": 311,
-    "frameworksBuilt": 10,
+    "frameworksBuilt": 11,
     "competitorVideosTracked": 232
   }
 }
