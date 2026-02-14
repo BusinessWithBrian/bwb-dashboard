@@ -1,0 +1,179 @@
+{
+  "lastUpdated": "2026-02-13T16:30:00-08:00",
+  "projects": [
+    {
+      "id": "style-framework",
+      "name": "Writing Style Framework",
+      "status": "complete",
+      "progress": 100,
+      "category": "Foundation",
+      "steps": [
+        {"name": "Script organization (311 files)", "status": "done"},
+        {"name": "Script cleanup (26 moved)", "status": "done"},
+        {"name": "Deep style profile (12 dimensions)", "status": "done"},
+        {"name": "Writing framework v1", "status": "done"},
+        {"name": "40-point style scorecard", "status": "done"},
+        {"name": "Sponsorship voice profile", "status": "done"},
+        {"name": "Editor notes style profile", "status": "done"},
+        {"name": "Video theme taxonomy (7 categories)", "status": "done"}
+      ],
+      "completedDate": "2026-02-13"
+    },
+    {
+      "id": "content-pipeline",
+      "name": "Content Pipeline Architecture",
+      "status": "complete",
+      "progress": 100,
+      "category": "Foundation",
+      "steps": [
+        {"name": "Folder structure (BWB Finance + Travel)", "status": "done"},
+        {"name": "5 idea source streams defined", "status": "done"},
+        {"name": "Pipeline templates (idea brief, weekly board, research pack)", "status": "done"},
+        {"name": "Pipeline README + rules", "status": "done"}
+      ],
+      "completedDate": "2026-02-13"
+    },
+    {
+      "id": "google-integration",
+      "name": "Google Drive & Sheets Integration",
+      "status": "complete",
+      "progress": 100,
+      "category": "Infrastructure",
+      "steps": [
+        {"name": "Service account setup", "status": "done"},
+        {"name": "Drive API — reading news JSONs", "status": "done"},
+        {"name": "Sheets API — competitor video data", "status": "done"},
+        {"name": "Setup guide documentation", "status": "done"}
+      ],
+      "completedDate": "2026-02-13"
+    },
+    {
+      "id": "market-intelligence",
+      "name": "Market Intelligence Engine",
+      "status": "active",
+      "progress": 40,
+      "category": "Intelligence",
+      "steps": [
+        {"name": "Macro Regime Classifier", "status": "done"},
+        {"name": "20 Core Causal Chains", "status": "done"},
+        {"name": "Leading Indicators Dashboard", "status": "done"},
+        {"name": "Cross-asset correlation maps", "status": "pending"},
+        {"name": "Investor mental models", "status": "pending"},
+        {"name": "Historical pattern library", "status": "pending"},
+        {"name": "Sentiment cycle tracking", "status": "pending"},
+        {"name": "Signal detection & alerts", "status": "pending"},
+        {"name": "Geopolitical forces framework", "status": "pending"},
+        {"name": "Integration into weekly idea board", "status": "pending"}
+      ]
+    },
+    {
+      "id": "litmus-testing",
+      "name": "Litmus Test & Validation System",
+      "status": "active",
+      "progress": 25,
+      "category": "Quality",
+      "steps": [
+        {"name": "Research-only vs competitor test (6.6/10)", "status": "done"},
+        {"name": "Universal litmus pattern defined", "status": "done"},
+        {"name": "Performance Prediction Scorecard", "status": "in-progress"},
+        {"name": "Style blind read test", "status": "pending"},
+        {"name": "Research quality validation", "status": "pending"},
+        {"name": "Script revision density tracking", "status": "pending"},
+        {"name": "Feedback loop automation", "status": "pending"}
+      ]
+    },
+    {
+      "id": "prediction-scorecard",
+      "name": "Performance Prediction Scorecard",
+      "status": "active",
+      "progress": 0,
+      "category": "Quality",
+      "steps": [
+        {"name": "Define prediction metrics (7-day, 30-day views, engagement)", "status": "pending"},
+        {"name": "Build scoring template", "status": "pending"},
+        {"name": "Baseline from Brian's recent video performance", "status": "pending"},
+        {"name": "Pre-publish prediction workflow", "status": "pending"},
+        {"name": "Tracking spreadsheet / data store", "status": "pending"},
+        {"name": "Statistical validation after 10-15 videos", "status": "pending"}
+      ]
+    },
+    {
+      "id": "viewer-intent",
+      "name": "Viewer Intent Mapping",
+      "status": "queued",
+      "progress": 0,
+      "category": "Intelligence",
+      "steps": [
+        {"name": "Define emotional driver taxonomy", "status": "pending"},
+        {"name": "Retag 232 competitor videos by emotion", "status": "pending"},
+        {"name": "Map Brian's counter-cycle positioning", "status": "pending"},
+        {"name": "Integrate into idea scoring", "status": "pending"}
+      ]
+    },
+    {
+      "id": "comment-mining",
+      "name": "YouTube Comment Mining",
+      "status": "queued",
+      "progress": 0,
+      "category": "Intelligence",
+      "steps": [
+        {"name": "YouTube API setup for comments", "status": "pending"},
+        {"name": "Pull recent video comments", "status": "pending"},
+        {"name": "Cluster by request/question type", "status": "pending"},
+        {"name": "Surface unmet demand report", "status": "pending"},
+        {"name": "Integrate into weekly idea board", "status": "pending"}
+      ]
+    },
+    {
+      "id": "competitor-analysis",
+      "name": "Competitor Video Analysis (Round 2)",
+      "status": "active",
+      "progress": 60,
+      "category": "Intelligence",
+      "steps": [
+        {"name": "Pull 233 rows from Google Sheet", "status": "done"},
+        {"name": "Filter to 120 recent videos (past 2 weeks)", "status": "done"},
+        {"name": "Pattern analysis & trending topics", "status": "done"},
+        {"name": "Fill AI Video Angle / Topic Category / Urgency columns", "status": "pending"},
+        {"name": "Gap opportunity report for Brian", "status": "pending"}
+      ]
+    },
+    {
+      "id": "end-to-end-test",
+      "name": "Pipeline End-to-End Test",
+      "status": "queued",
+      "progress": 0,
+      "category": "Pipeline",
+      "steps": [
+        {"name": "Brian picks a topic from idea board", "status": "pending"},
+        {"name": "Idea brief generation", "status": "pending"},
+        {"name": "Research pack", "status": "pending"},
+        {"name": "Script draft", "status": "pending"},
+        {"name": "Editorial packaging (B-roll, editor notes)", "status": "pending"},
+        {"name": "Final review with Brian", "status": "pending"}
+      ]
+    },
+    {
+      "id": "agent-specs",
+      "name": "Agent Specifications",
+      "status": "queued",
+      "progress": 0,
+      "category": "Infrastructure",
+      "steps": [
+        {"name": "Research Agent spec", "status": "pending"},
+        {"name": "Script Agent spec", "status": "pending"},
+        {"name": "Editorial Packaging Agent spec", "status": "pending"},
+        {"name": "Idea Scout Agent spec", "status": "pending"}
+      ]
+    }
+  ],
+  "stats": {
+    "totalProjects": 11,
+    "completed": 3,
+    "active": 4,
+    "queued": 4,
+    "scriptsAnalyzed": 311,
+    "frameworksBuilt": 8,
+    "competitorVideosTracked": 232
+  }
+}
