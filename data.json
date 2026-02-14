@@ -173,29 +173,29 @@
     {
       "id": "title-thumbnail",
       "name": "Title & Thumbnail Scoring Framework",
-      "status": "active",
-      "progress": 0,
+      "status": "complete",
+      "progress": 100,
       "category": "Quality",
       "steps": [
-        {"name": "Analyze title patterns vs CTR/views from analytics", "status": "pending"},
-        {"name": "Build title scoring rubric", "status": "pending"},
-        {"name": "Thumbnail best practices from top performers", "status": "pending"},
-        {"name": "Emotional packaging guidelines (fear-click strategy)", "status": "pending"},
-        {"name": "Integrate into pipeline pre-publish checklist", "status": "pending"}
+        {"name": "50-point title scoring rubric (10 criteria)", "status": "done"},
+        {"name": "10 proven title formula templates", "status": "done"},
+        {"name": "Thumbnail design rules (mobile + TV optimized)", "status": "done"},
+        {"name": "Pre-publish checklist + kill criteria", "status": "done"},
+        {"name": "A/B title testing protocol (5 options per video)", "status": "done"}
       ]
     },
     {
       "id": "feedback-loop",
       "name": "Script-to-Performance Feedback Loop",
-      "status": "active",
-      "progress": 0,
+      "status": "complete",
+      "progress": 100,
       "category": "Quality",
       "steps": [
-        {"name": "Design automated 7-day + 30-day pull triggers", "status": "pending"},
-        {"name": "Prediction vs actuals comparison template", "status": "pending"},
-        {"name": "Signal weight recalibration protocol", "status": "pending"},
-        {"name": "Monthly retrospective framework", "status": "pending"},
-        {"name": "Integration with prediction scorecard", "status": "pending"}
+        {"name": "3-stage pull protocol (T+0, T+7, T+30)", "status": "done"},
+        {"name": "Prediction vs actuals comparison + error tracking", "status": "done"},
+        {"name": "Signal recalibration at 5/10/15 videos", "status": "done"},
+        {"name": "Monthly retrospective template", "status": "done"},
+        {"name": "7 continuous improvement triggers", "status": "done"}
       ]
     },
     {
@@ -265,11 +265,11 @@
   ],
   "stats": {
     "totalProjects": 18,
-    "completed": 7,
-    "active": 5,
+    "completed": 9,
+    "active": 3,
     "queued": 6,
     "scriptsAnalyzed": 311,
-    "frameworksBuilt": 11,
+    "frameworksBuilt": 13,
     "competitorVideosTracked": 232
   }
 }
