@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T18:15:00-08:00",
+  "lastUpdated": "2026-02-13T18:23:00-08:00",
   "projects": [
     {
       "id": "style-framework",
@@ -51,7 +51,7 @@
       "id": "market-intelligence",
       "name": "Market Intelligence Engine",
       "status": "active",
-      "progress": 65,
+      "progress": 75,
       "category": "Intelligence",
       "steps": [
         {"name": "Macro Regime Classifier", "status": "done"},
@@ -60,7 +60,7 @@
         {"name": "Cross-asset correlation maps (8 maps)", "status": "done"},
         {"name": "Investor mental models (6 biases + 5 narratives)", "status": "done"},
         {"name": "Historical pattern library (11 episodes)", "status": "done"},
-        {"name": "Sentiment cycle tracking", "status": "in-progress"},
+        {"name": "Sentiment cycle framework (8 stages + current assessment)", "status": "done"},
         {"name": "Signal detection & alerts", "status": "pending"},
         {"name": "Geopolitical forces framework", "status": "pending"},
         {"name": "Integration into weekly idea board", "status": "pending"}
