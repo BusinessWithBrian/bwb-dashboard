@@ -114,15 +114,15 @@
     {
       "id": "comment-mining",
       "name": "YouTube Comment Mining",
-      "status": "active",
-      "progress": 10,
+      "status": "complete",
+      "progress": 100,
       "category": "Intelligence",
       "steps": [
-        {"name": "YouTube API setup for comments (needs scope fix)", "status": "in-progress"},
-        {"name": "Pull recent video comments", "status": "pending"},
-        {"name": "Cluster by request/question type", "status": "pending"},
-        {"name": "Surface unmet demand report", "status": "pending"},
-        {"name": "Integrate into weekly idea board", "status": "pending"}
+        {"name": "OAuth scope fix + API working", "status": "done"},
+        {"name": "1,993 comments pulled from top 20 videos", "status": "done"},
+        {"name": "Sentiment clustering + bot detection", "status": "done"},
+        {"name": "Top 20 content ideas from audience", "status": "done"},
+        {"name": "Reusable scripts + Monday cadence integration", "status": "done"}
       ]
     },
     {
@@ -265,11 +265,11 @@
   ],
   "stats": {
     "totalProjects": 18,
-    "completed": 9,
-    "active": 3,
+    "completed": 10,
+    "active": 2,
     "queued": 6,
     "scriptsAnalyzed": 311,
-    "frameworksBuilt": 13,
+    "frameworksBuilt": 14,
     "competitorVideosTracked": 232
   }
 }
