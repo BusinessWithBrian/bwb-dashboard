@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T18:56:00-08:00",
+  "lastUpdated": "2026-02-14T12:35:00-08:00",
   "projects": [
     {
       "id": "style-framework",
@@ -171,6 +171,85 @@
       "completedDate": "2026-02-13"
     },
     {
+      "id": "title-thumbnail",
+      "name": "Title & Thumbnail Scoring Framework",
+      "status": "active",
+      "progress": 0,
+      "category": "Quality",
+      "steps": [
+        {"name": "Analyze title patterns vs CTR/views from analytics", "status": "pending"},
+        {"name": "Build title scoring rubric", "status": "pending"},
+        {"name": "Thumbnail best practices from top performers", "status": "pending"},
+        {"name": "Emotional packaging guidelines (fear-click strategy)", "status": "pending"},
+        {"name": "Integrate into pipeline pre-publish checklist", "status": "pending"}
+      ]
+    },
+    {
+      "id": "feedback-loop",
+      "name": "Script-to-Performance Feedback Loop",
+      "status": "active",
+      "progress": 0,
+      "category": "Quality",
+      "steps": [
+        {"name": "Design automated 7-day + 30-day pull triggers", "status": "pending"},
+        {"name": "Prediction vs actuals comparison template", "status": "pending"},
+        {"name": "Signal weight recalibration protocol", "status": "pending"},
+        {"name": "Monthly retrospective framework", "status": "pending"},
+        {"name": "Integration with prediction scorecard", "status": "pending"}
+      ]
+    },
+    {
+      "id": "audience-segments",
+      "name": "Audience Segment Strategy",
+      "status": "active",
+      "progress": 0,
+      "category": "Intelligence",
+      "steps": [
+        {"name": "Define audience segments from demographics", "status": "pending"},
+        {"name": "Map existing videos to segments", "status": "pending"},
+        {"name": "Identify underserved segments", "status": "pending"},
+        {"name": "Segment-aware idea board scoring", "status": "pending"}
+      ]
+    },
+    {
+      "id": "revenue-calendar",
+      "name": "Revenue-Optimized Content Calendar",
+      "status": "active",
+      "progress": 0,
+      "category": "Pipeline",
+      "steps": [
+        {"name": "CPM analysis by topic category", "status": "pending"},
+        {"name": "Seasonal CPM patterns (monthly)", "status": "pending"},
+        {"name": "Revenue projection model", "status": "pending"},
+        {"name": "Quarterly content calendar template", "status": "pending"}
+      ]
+    },
+    {
+      "id": "content-recycling",
+      "name": "Second Life Content Recycling",
+      "status": "queued",
+      "progress": 0,
+      "category": "Pipeline",
+      "steps": [
+        {"name": "Flag evergreen videos still getting search traffic", "status": "pending"},
+        {"name": "Identify refresh candidates (6+ months, high search)", "status": "pending"},
+        {"name": "Updated version template", "status": "pending"},
+        {"name": "Integration into idea board", "status": "pending"}
+      ]
+    },
+    {
+      "id": "collab-intel",
+      "name": "Collaboration Intelligence",
+      "status": "queued",
+      "progress": 0,
+      "category": "Intelligence",
+      "steps": [
+        {"name": "Analyze suggested video traffic for audience overlap", "status": "pending"},
+        {"name": "Identify top collab candidates", "status": "pending"},
+        {"name": "Outreach strategy framework", "status": "pending"}
+      ]
+    },
+    {
       "id": "agent-specs",
       "name": "Agent Specifications",
       "status": "queued",
@@ -185,10 +264,10 @@
     }
   ],
   "stats": {
-    "totalProjects": 12,
+    "totalProjects": 18,
     "completed": 7,
-    "active": 1,
-    "queued": 4,
+    "active": 5,
+    "queued": 6,
     "scriptsAnalyzed": 311,
     "frameworksBuilt": 11,
     "competitorVideosTracked": 232
