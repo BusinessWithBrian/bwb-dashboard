@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-14T12:35:00-08:00",
+  "lastUpdated": "2026-02-14T12:48:00-08:00",
   "projects": [
     {
       "id": "style-framework",
@@ -201,27 +201,27 @@
     {
       "id": "audience-segments",
       "name": "Audience Segment Strategy",
-      "status": "active",
-      "progress": 0,
+      "status": "complete",
+      "progress": 100,
       "category": "Intelligence",
       "steps": [
-        {"name": "Define audience segments from demographics", "status": "pending"},
-        {"name": "Map existing videos to segments", "status": "pending"},
-        {"name": "Identify underserved segments", "status": "pending"},
-        {"name": "Segment-aware idea board scoring", "status": "pending"}
+        {"name": "6 audience segments from real demographics", "status": "done"},
+        {"name": "Content-to-segment mapping", "status": "done"},
+        {"name": "Underserved segment analysis", "status": "done"},
+        {"name": "Segment-aware idea board scoring + gap flagging", "status": "done"}
       ]
     },
     {
       "id": "revenue-calendar",
       "name": "Revenue-Optimized Content Calendar",
-      "status": "active",
-      "progress": 0,
+      "status": "complete",
+      "progress": 100,
       "category": "Pipeline",
       "steps": [
-        {"name": "CPM analysis by topic category", "status": "pending"},
-        {"name": "Seasonal CPM patterns (monthly)", "status": "pending"},
-        {"name": "Revenue projection model", "status": "pending"},
-        {"name": "Quarterly content calendar template", "status": "pending"}
+        {"name": "CPM by topic ($22.13 RPM evergreen, $15.57 CPM ETFs)", "status": "done"},
+        {"name": "Seasonal patterns (Q4/Q1 peak)", "status": "done"},
+        {"name": "Revenue projection model (low/mid/high)", "status": "done"},
+        {"name": "Quarterly calendar template + 12-week sample", "status": "done"}
       ]
     },
     {
@@ -265,11 +265,11 @@
   ],
   "stats": {
     "totalProjects": 18,
-    "completed": 10,
-    "active": 2,
+    "completed": 12,
+    "active": 0,
     "queued": 6,
     "scriptsAnalyzed": 311,
-    "frameworksBuilt": 14,
+    "frameworksBuilt": 16,
     "competitorVideosTracked": 232
   }
 }
