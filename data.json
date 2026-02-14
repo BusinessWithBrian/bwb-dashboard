@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T17:45:00-08:00",
+  "lastUpdated": "2026-02-13T17:55:00-08:00",
   "projects": [
     {
       "id": "style-framework",
@@ -155,6 +155,22 @@
       ]
     },
     {
+      "id": "reddit-sentiment",
+      "name": "Reddit Sentiment Stream",
+      "status": "complete",
+      "progress": 100,
+      "category": "Pipeline",
+      "steps": [
+        {"name": "Scan protocol (8 subreddits, 3 tiers)", "status": "done"},
+        {"name": "Monday + Wednesday cadence defined", "status": "done"},
+        {"name": "Cross-stream conviction scoring", "status": "done"},
+        {"name": "Scan output template", "status": "done"},
+        {"name": "Pipeline README updated", "status": "done"},
+        {"name": "Folder structure created", "status": "done"}
+      ],
+      "completedDate": "2026-02-13"
+    },
+    {
       "id": "agent-specs",
       "name": "Agent Specifications",
       "status": "queued",
@@ -169,8 +185,8 @@
     }
   ],
   "stats": {
-    "totalProjects": 11,
-    "completed": 3,
+    "totalProjects": 12,
+    "completed": 4,
     "active": 4,
     "queued": 4,
     "scriptsAnalyzed": 311,
