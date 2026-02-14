@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-13T18:35:00-08:00",
+  "lastUpdated": "2026-02-13T18:41:00-08:00",
   "projects": [
     {
       "id": "style-framework",
@@ -101,14 +101,14 @@
     {
       "id": "viewer-intent",
       "name": "Viewer Intent Mapping",
-      "status": "queued",
-      "progress": 0,
+      "status": "complete",
+      "progress": 100,
       "category": "Intelligence",
       "steps": [
-        {"name": "Define emotional driver taxonomy", "status": "pending"},
-        {"name": "Retag 232 competitor videos by emotion", "status": "pending"},
-        {"name": "Map Brian's counter-cycle positioning", "status": "pending"},
-        {"name": "Integrate into idea scoring", "status": "pending"}
+        {"name": "8 emotional driver taxonomy defined", "status": "done"},
+        {"name": "232 competitor videos tagged (Sheet cols S+T)", "status": "done"},
+        {"name": "Performance analysis by emotion", "status": "done"},
+        {"name": "Counter-cycle positioning map + 5 recommendations", "status": "done"}
       ]
     },
     {
@@ -186,11 +186,11 @@
   ],
   "stats": {
     "totalProjects": 12,
-    "completed": 5,
-    "active": 3,
+    "completed": 6,
+    "active": 2,
     "queued": 4,
     "scriptsAnalyzed": 311,
-    "frameworksBuilt": 9,
+    "frameworksBuilt": 10,
     "competitorVideosTracked": 232
   }
 }
