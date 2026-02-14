@@ -75,7 +75,7 @@
       "steps": [
         {"name": "Research-only vs competitor test (6.6/10)", "status": "done"},
         {"name": "Universal litmus pattern defined", "status": "done"},
-        {"name": "Performance Prediction Scorecard", "status": "in-progress"},
+        {"name": "Performance Prediction Scorecard framework built", "status": "done"},
         {"name": "Style blind read test", "status": "pending"},
         {"name": "Research quality validation", "status": "pending"},
         {"name": "Script revision density tracking", "status": "pending"},
@@ -86,13 +86,13 @@
       "id": "prediction-scorecard",
       "name": "Performance Prediction Scorecard",
       "status": "active",
-      "progress": 0,
+      "progress": 50,
       "category": "Quality",
       "steps": [
-        {"name": "Define prediction metrics (7-day, 30-day views, engagement)", "status": "pending"},
-        {"name": "Build scoring template", "status": "pending"},
-        {"name": "Baseline from Brian's recent video performance", "status": "pending"},
-        {"name": "Pre-publish prediction workflow", "status": "pending"},
+        {"name": "Define prediction metrics (7-day, 30-day views, engagement)", "status": "done"},
+        {"name": "Build scoring template (12 signals, weighted)", "status": "done"},
+        {"name": "Baseline benchmarks (300K sub channel)", "status": "done"},
+        {"name": "Pre-publish prediction workflow", "status": "done"},
         {"name": "Tracking spreadsheet / data store", "status": "pending"},
         {"name": "Statistical validation after 10-15 videos", "status": "pending"}
       ]
@@ -173,7 +173,7 @@
     "active": 4,
     "queued": 4,
     "scriptsAnalyzed": 311,
-    "frameworksBuilt": 8,
+    "frameworksBuilt": 9,
     "competitorVideosTracked": 232
   }
 }
