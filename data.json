@@ -128,13 +128,13 @@
       "id": "competitor-analysis",
       "name": "Competitor Video Analysis (Round 2)",
       "status": "active",
-      "progress": 60,
+      "progress": 80,
       "category": "Intelligence",
       "steps": [
         {"name": "Pull 233 rows from Google Sheet", "status": "done"},
         {"name": "Filter to 120 recent videos (past 2 weeks)", "status": "done"},
         {"name": "Pattern analysis & trending topics", "status": "done"},
-        {"name": "Fill AI Video Angle / Topic Category / Urgency columns", "status": "pending"},
+        {"name": "Fill AI Video Angle columns (110 rows)", "status": "done"},
         {"name": "Gap opportunity report for Brian", "status": "pending"}
       ]
     },
