@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-02-16T17:03:33.089729+00:00",
+  "pipeline": [
+    {
+      "video_slug": "silicon_photonics",
+      "current_stage": "final_delivery_in_progress",
+      "ready_for_recording": false,
+      "last_updated": "2026-02-16T17:03:33.089724+00:00",
+      "blocking_issue": "delivery requirements not complete"
+    }
+  ],
+  "delivery": [
+    {
+      "video_slug": "silicon_photonics",
+      "script_final_docx": false,
+      "editorial_package_simple_md": false,
+      "visual_handoff_json": false,
+      "delivery_manifest_json": false,
+      "nas_copy_status": "unknown",
+      "ready_for_recording": false
+    }
+  ],
+  "multiplication": [
+    {
+      "video_slug": "silicon_photonics",
+      "shorts_concepts_md": false,
+      "newsletter_segment_md": false,
+      "patreon_companion_md": false,
+      "social_hooks_md": false,
+      "multiplication_manifest_json": false
+    }
+  ],
+  "feedback": {
+    "pending_24h": 0,
+    "pending_7d": 0,
+    "pending_30d": 0,
+    "overdue": 0
+  }
+}

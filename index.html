@@ -81,6 +81,29 @@
     align-items: center;
     gap: 8px;
   }
+  .ops-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .ops-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+  }
+  .ops-card .k {
+    color: var(--text-dim);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 6px;
+  }
+  .ops-card .v {
+    font-size: 22px;
+    font-weight: 700;
+  }
   .section-title .dot {
     width: 10px;
     height: 10px;
@@ -206,6 +229,9 @@
 
 <div class="stats-row" id="statsRow"></div>
 
+<div class="section-title"><span class="dot dot-active"></span>⚙️ Dashboard Reporting Simple View 1</div>
+<div class="ops-grid" id="opsGrid"></div>
+
 <div id="sections"></div>
 
 <script>
@@ -213,7 +239,7 @@ fetch('data.json?t=' + Date.now())
   .then(r => r.json())
   .then(data => render(data))
   .catch(() => {
-    document.getElementById('sections').innerHTML = '<p style="color:var(--red)">Could not load data.json — make sure it\'s in the same folder as this HTML file.</p>';
+    document.getElementById('sections').innerHTML = '<p style="color:var(--red)">Could not load dashboard data.json.</p>';
   });
 
 function render(data) {
@@ -232,6 +258,25 @@ function render(data) {
     {n: s.competitorVideosTracked, l: 'Videos Tracked'},
   ].map(x => `<div class="stat-card"><div class="number">${x.n}</div><div class="label">${x.l}</div></div>`).join('');
   document.getElementById('statsRow').innerHTML = statsHTML;
+
+  // Ops snapshot (Simple View 1) from unified data path (data.json -> opsSimple)
+  const opsGrid = document.getElementById('opsGrid');
+  const ops = data.opsSimple;
+  if (ops) {
+    const pipelineCount = ops.videosTracked ?? 0;
+    const readyCount = ops.readyForRecording ?? 0;
+    const overdue = ops.overdueCheckpoints ?? 0;
+    const totalPending = ops.pendingCheckpoints ?? 0;
+
+    opsGrid.innerHTML = `
+      <div class="ops-card"><div class="k">Videos Tracked</div><div class="v">${pipelineCount}</div></div>
+      <div class="ops-card"><div class="k">Ready for Recording</div><div class="v">${readyCount}</div></div>
+      <div class="ops-card"><div class="k">Pending Checkpoints</div><div class="v">${totalPending}</div></div>
+      <div class="ops-card"><div class="k">Overdue Checkpoints</div><div class="v" style="color:${overdue > 0 ? 'var(--red)' : 'var(--green)'}">${overdue}</div></div>
+    `;
+  } else {
+    opsGrid.innerHTML = '<div class="ops-card"><div class="k">Simple View 1</div><div class="v" style="font-size:14px;color:var(--text-dim)">opsSimple not populated yet</div></div>';
+  }
 
   // Group projects
   const groups = {

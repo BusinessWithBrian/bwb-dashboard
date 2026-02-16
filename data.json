@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T16:42:00-08:00",
+  "lastUpdated": "2026-02-16T17:03:33.089729+00:00",
   "projects": [
     {
       "id": "style-framework",
@@ -81,11 +81,11 @@
           "status": "done"
         },
         {
-          "name": "Drive API — reading news JSONs",
+          "name": "Drive API \u2014 reading news JSONs",
           "status": "done"
         },
         {
-          "name": "Sheets API — competitor video data",
+          "name": "Sheets API \u2014 competitor video data",
           "status": "done"
         },
         {
@@ -564,7 +564,7 @@
           "status": "done"
         },
         {
-          "name": "Script iterations to final (v1→v6)",
+          "name": "Script iterations to final (v1\u2192v6)",
           "status": "done"
         },
         {
@@ -676,7 +676,7 @@
       },
       {
         "videoId": "t2b-mdFg8rI",
-        "title": "🚨URGENT: The $2.4 Trillion AI Infrastructure Reset 📈",
+        "title": "\ud83d\udea8URGENT: The $2.4 Trillion AI Infrastructure Reset \ud83d\udcc8",
         "publishedAt": "2026-01-31T14:31:00Z",
         "views": 87062,
         "viewsPerDay": 5705.34
@@ -690,7 +690,7 @@
       },
       {
         "videoId": "OsEeetpStF4",
-        "title": "I Was Ranked #1: My Top Stock Picks for 2026 📈",
+        "title": "I Was Ranked #1: My Top Stock Picks for 2026 \ud83d\udcc8",
         "publishedAt": "2026-01-25T14:15:02Z",
         "views": 276931,
         "viewsPerDay": 13019.29
@@ -703,5 +703,16 @@
         "viewsPerDay": 2104.75
       }
     ]
-  }
+  },
+  "opsSimple": {
+    "videosTracked": 1,
+    "readyForRecording": 0,
+    "pendingCheckpoints": 0,
+    "pending24h": 0,
+    "pending7d": 0,
+    "pending30d": 0,
+    "overdueCheckpoints": 0
+  },
+  "opsSimpleSource": "data/scripts/build_dashboard_status.py",
+  "opsSimpleUpdated": "2026-02-16T17:03:33.089729+00:00"
 }
