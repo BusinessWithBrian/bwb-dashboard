@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T16:40:00-08:00",
+  "lastUpdated": "2026-02-15T16:42:00-08:00",
   "projects": [
     {
       "id": "style-framework",
@@ -368,29 +368,29 @@
     {
       "id": "title-thumbnail",
       "name": "Title & Thumbnail Scoring Framework",
-      "status": "complete",
-      "progress": 100,
+      "status": "active",
+      "progress": 85,
       "category": "Quality",
       "steps": [
         {
-          "name": "50-point title scoring rubric (10 criteria)",
+          "name": "50-point title scoring rubric + formula templates",
           "status": "done"
         },
         {
-          "name": "10 proven title formula templates",
+          "name": "Thumbnail design rules + pre-publish checklist",
           "status": "done"
         },
         {
-          "name": "Thumbnail design rules (mobile + TV optimized)",
+          "name": "Title DNA + competitor pattern research",
           "status": "done"
         },
         {
-          "name": "Pre-publish checklist + kill criteria",
+          "name": "Per-video standalone title/thumbnail package format",
           "status": "done"
         },
         {
-          "name": "A/B title testing protocol (5 options per video)",
-          "status": "done"
+          "name": "A/B testing loop in live publishing cadence",
+          "status": "pending"
         }
       ]
     },
@@ -586,7 +586,7 @@
       "id": "newsletter-intelligence",
       "name": "Newsletter Intelligence System",
       "status": "active",
-      "progress": 45,
+      "progress": 55,
       "category": "Intelligence",
       "steps": [
         {
@@ -618,8 +618,8 @@
   ],
   "stats": {
     "totalProjects": 20,
-    "completed": 14,
-    "active": 4,
+    "completed": 13,
+    "active": 5,
     "queued": 2,
     "scriptsAnalyzed": 311,
     "frameworksBuilt": 19,
