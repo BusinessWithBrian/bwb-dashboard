@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-14T12:48:00-08:00",
+  "lastUpdated": "2026-02-15T16:40:00-08:00",
   "projects": [
     {
       "id": "style-framework",
@@ -8,14 +8,38 @@
       "progress": 100,
       "category": "Foundation",
       "steps": [
-        {"name": "Script organization (311 files)", "status": "done"},
-        {"name": "Script cleanup (26 moved)", "status": "done"},
-        {"name": "Deep style profile (12 dimensions)", "status": "done"},
-        {"name": "Writing framework v1", "status": "done"},
-        {"name": "40-point style scorecard", "status": "done"},
-        {"name": "Sponsorship voice profile", "status": "done"},
-        {"name": "Editor notes style profile", "status": "done"},
-        {"name": "Video theme taxonomy (7 categories)", "status": "done"}
+        {
+          "name": "Script organization (311 files)",
+          "status": "done"
+        },
+        {
+          "name": "Script cleanup (26 moved)",
+          "status": "done"
+        },
+        {
+          "name": "Deep style profile (12 dimensions)",
+          "status": "done"
+        },
+        {
+          "name": "Writing framework v1",
+          "status": "done"
+        },
+        {
+          "name": "40-point style scorecard",
+          "status": "done"
+        },
+        {
+          "name": "Sponsorship voice profile",
+          "status": "done"
+        },
+        {
+          "name": "Editor notes style profile",
+          "status": "done"
+        },
+        {
+          "name": "Video theme taxonomy (7 categories)",
+          "status": "done"
+        }
       ],
       "completedDate": "2026-02-13"
     },
@@ -26,10 +50,22 @@
       "progress": 100,
       "category": "Foundation",
       "steps": [
-        {"name": "Folder structure (BWB Finance + Travel)", "status": "done"},
-        {"name": "5 idea source streams defined", "status": "done"},
-        {"name": "Pipeline templates (idea brief, weekly board, research pack)", "status": "done"},
-        {"name": "Pipeline README + rules", "status": "done"}
+        {
+          "name": "Folder structure (BWB Finance + Travel)",
+          "status": "done"
+        },
+        {
+          "name": "5 idea source streams defined",
+          "status": "done"
+        },
+        {
+          "name": "Pipeline templates (idea brief, weekly board, research pack)",
+          "status": "done"
+        },
+        {
+          "name": "Pipeline README + rules",
+          "status": "done"
+        }
       ],
       "completedDate": "2026-02-13"
     },
@@ -40,10 +76,22 @@
       "progress": 100,
       "category": "Infrastructure",
       "steps": [
-        {"name": "Service account setup", "status": "done"},
-        {"name": "Drive API — reading news JSONs", "status": "done"},
-        {"name": "Sheets API — competitor video data", "status": "done"},
-        {"name": "Setup guide documentation", "status": "done"}
+        {
+          "name": "Service account setup",
+          "status": "done"
+        },
+        {
+          "name": "Drive API — reading news JSONs",
+          "status": "done"
+        },
+        {
+          "name": "Sheets API — competitor video data",
+          "status": "done"
+        },
+        {
+          "name": "Setup guide documentation",
+          "status": "done"
+        }
       ],
       "completedDate": "2026-02-13"
     },
@@ -54,16 +102,46 @@
       "progress": 100,
       "category": "Intelligence",
       "steps": [
-        {"name": "Macro Regime Classifier", "status": "done"},
-        {"name": "20 Core Causal Chains", "status": "done"},
-        {"name": "Leading Indicators Dashboard", "status": "done"},
-        {"name": "Cross-asset correlation maps (8 maps)", "status": "done"},
-        {"name": "Investor mental models (6 biases + 5 narratives)", "status": "done"},
-        {"name": "Historical pattern library (11 episodes)", "status": "done"},
-        {"name": "Sentiment cycle framework (8 stages + current assessment)", "status": "done"},
-        {"name": "Signal detection & alert system (RED/AMBER/GREEN)", "status": "done"},
-        {"name": "Geopolitical forces (7 themes, risk 4.5/10)", "status": "done"},
-        {"name": "Master index + weekly maintenance checklist", "status": "done"}
+        {
+          "name": "Macro Regime Classifier",
+          "status": "done"
+        },
+        {
+          "name": "20 Core Causal Chains",
+          "status": "done"
+        },
+        {
+          "name": "Leading Indicators Dashboard",
+          "status": "done"
+        },
+        {
+          "name": "Cross-asset correlation maps (8 maps)",
+          "status": "done"
+        },
+        {
+          "name": "Investor mental models (6 biases + 5 narratives)",
+          "status": "done"
+        },
+        {
+          "name": "Historical pattern library (11 episodes)",
+          "status": "done"
+        },
+        {
+          "name": "Sentiment cycle framework (8 stages + current assessment)",
+          "status": "done"
+        },
+        {
+          "name": "Signal detection & alert system (RED/AMBER/GREEN)",
+          "status": "done"
+        },
+        {
+          "name": "Geopolitical forces (7 themes, risk 4.5/10)",
+          "status": "done"
+        },
+        {
+          "name": "Master index + weekly maintenance checklist",
+          "status": "done"
+        }
       ]
     },
     {
@@ -73,13 +151,34 @@
       "progress": 25,
       "category": "Quality",
       "steps": [
-        {"name": "Research-only vs competitor test (6.6/10)", "status": "done"},
-        {"name": "Universal litmus pattern defined", "status": "done"},
-        {"name": "Performance Prediction Scorecard framework built", "status": "done"},
-        {"name": "Style blind read test", "status": "pending"},
-        {"name": "Research quality validation", "status": "pending"},
-        {"name": "Script revision density tracking", "status": "pending"},
-        {"name": "Feedback loop automation", "status": "pending"}
+        {
+          "name": "Research-only vs competitor test (6.6/10)",
+          "status": "done"
+        },
+        {
+          "name": "Universal litmus pattern defined",
+          "status": "done"
+        },
+        {
+          "name": "Performance Prediction Scorecard framework built",
+          "status": "done"
+        },
+        {
+          "name": "Style blind read test",
+          "status": "pending"
+        },
+        {
+          "name": "Research quality validation",
+          "status": "pending"
+        },
+        {
+          "name": "Script revision density tracking",
+          "status": "pending"
+        },
+        {
+          "name": "Feedback loop automation",
+          "status": "pending"
+        }
       ]
     },
     {
@@ -89,13 +188,34 @@
       "progress": 65,
       "category": "Quality",
       "steps": [
-        {"name": "Define prediction metrics (7-day, 30-day views, engagement)", "status": "done"},
-        {"name": "Build scoring template (12 signals, weighted)", "status": "done"},
-        {"name": "Baseline benchmarks (300K sub channel)", "status": "done"},
-        {"name": "Calibrated with real BWB data (284 videos)", "status": "done"},
-        {"name": "Pre-publish prediction workflow", "status": "done"},
-        {"name": "Tracking spreadsheet / data store", "status": "pending"},
-        {"name": "Statistical validation after 10-15 videos", "status": "pending"}
+        {
+          "name": "Define prediction metrics (7-day, 30-day views, engagement)",
+          "status": "done"
+        },
+        {
+          "name": "Build scoring template (12 signals, weighted)",
+          "status": "done"
+        },
+        {
+          "name": "Baseline benchmarks (300K sub channel)",
+          "status": "done"
+        },
+        {
+          "name": "Calibrated with real BWB data (284 videos)",
+          "status": "done"
+        },
+        {
+          "name": "Pre-publish prediction workflow",
+          "status": "done"
+        },
+        {
+          "name": "Tracking spreadsheet / data store",
+          "status": "pending"
+        },
+        {
+          "name": "Statistical validation after 10-15 videos",
+          "status": "pending"
+        }
       ]
     },
     {
@@ -105,10 +225,22 @@
       "progress": 100,
       "category": "Intelligence",
       "steps": [
-        {"name": "8 emotional driver taxonomy defined", "status": "done"},
-        {"name": "232 competitor videos tagged (Sheet cols S+T)", "status": "done"},
-        {"name": "Performance analysis by emotion", "status": "done"},
-        {"name": "Counter-cycle positioning map + 5 recommendations", "status": "done"}
+        {
+          "name": "8 emotional driver taxonomy defined",
+          "status": "done"
+        },
+        {
+          "name": "232 competitor videos tagged (Sheet cols S+T)",
+          "status": "done"
+        },
+        {
+          "name": "Performance analysis by emotion",
+          "status": "done"
+        },
+        {
+          "name": "Counter-cycle positioning map + 5 recommendations",
+          "status": "done"
+        }
       ]
     },
     {
@@ -118,11 +250,26 @@
       "progress": 100,
       "category": "Intelligence",
       "steps": [
-        {"name": "OAuth scope fix + API working", "status": "done"},
-        {"name": "1,993 comments pulled from top 20 videos", "status": "done"},
-        {"name": "Sentiment clustering + bot detection", "status": "done"},
-        {"name": "Top 20 content ideas from audience", "status": "done"},
-        {"name": "Reusable scripts + Monday cadence integration", "status": "done"}
+        {
+          "name": "OAuth scope fix + API working",
+          "status": "done"
+        },
+        {
+          "name": "1,993 comments pulled from top 20 videos",
+          "status": "done"
+        },
+        {
+          "name": "Sentiment clustering + bot detection",
+          "status": "done"
+        },
+        {
+          "name": "Top 20 content ideas from audience",
+          "status": "done"
+        },
+        {
+          "name": "Reusable scripts + Monday cadence integration",
+          "status": "done"
+        }
       ]
     },
     {
@@ -132,27 +279,57 @@
       "progress": 100,
       "category": "Intelligence",
       "steps": [
-        {"name": "Pull 233 rows from Google Sheet", "status": "done"},
-        {"name": "Filter to 120 recent videos (past 2 weeks)", "status": "done"},
-        {"name": "Pattern analysis & trending topics", "status": "done"},
-        {"name": "Fill AI Video Angle columns (110 rows)", "status": "done"},
-        {"name": "Competitor transcript analysis (10 videos, 7 channels)", "status": "done"}
+        {
+          "name": "Pull 233 rows from Google Sheet",
+          "status": "done"
+        },
+        {
+          "name": "Filter to 120 recent videos (past 2 weeks)",
+          "status": "done"
+        },
+        {
+          "name": "Pattern analysis & trending topics",
+          "status": "done"
+        },
+        {
+          "name": "Fill AI Video Angle columns (110 rows)",
+          "status": "done"
+        },
+        {
+          "name": "Competitor transcript analysis (10 videos, 7 channels)",
+          "status": "done"
+        }
       ]
     },
     {
       "id": "end-to-end-test",
       "name": "Pipeline End-to-End Test",
-      "status": "queued",
-      "progress": 0,
+      "status": "complete",
+      "progress": 100,
       "category": "Pipeline",
       "steps": [
-        {"name": "Brian picks a topic from idea board", "status": "pending"},
-        {"name": "Idea brief generation", "status": "pending"},
-        {"name": "Research pack", "status": "pending"},
-        {"name": "Script draft", "status": "pending"},
-        {"name": "Editorial packaging (B-roll, editor notes)", "status": "pending"},
-        {"name": "Final review with Brian", "status": "pending"}
-      ]
+        {
+          "name": "Topic selected (Silicon Photonics)",
+          "status": "done"
+        },
+        {
+          "name": "Research pack + financial deep dive completed",
+          "status": "done"
+        },
+        {
+          "name": "Script draft iterations + QA completed",
+          "status": "done"
+        },
+        {
+          "name": "Visual Agent pass + editorial packaging completed",
+          "status": "done"
+        },
+        {
+          "name": "Final delivery package (.md + .docx + visuals) completed",
+          "status": "done"
+        }
+      ],
+      "completedDate": "2026-02-15"
     },
     {
       "id": "reddit-sentiment",
@@ -161,12 +338,30 @@
       "progress": 100,
       "category": "Pipeline",
       "steps": [
-        {"name": "Scan protocol (8 subreddits, 3 tiers)", "status": "done"},
-        {"name": "Monday + Wednesday cadence defined", "status": "done"},
-        {"name": "Cross-stream conviction scoring", "status": "done"},
-        {"name": "Scan output template", "status": "done"},
-        {"name": "Pipeline README updated", "status": "done"},
-        {"name": "Folder structure created", "status": "done"}
+        {
+          "name": "Scan protocol (8 subreddits, 3 tiers)",
+          "status": "done"
+        },
+        {
+          "name": "Monday + Wednesday cadence defined",
+          "status": "done"
+        },
+        {
+          "name": "Cross-stream conviction scoring",
+          "status": "done"
+        },
+        {
+          "name": "Scan output template",
+          "status": "done"
+        },
+        {
+          "name": "Pipeline README updated",
+          "status": "done"
+        },
+        {
+          "name": "Folder structure created",
+          "status": "done"
+        }
       ],
       "completedDate": "2026-02-13"
     },
@@ -177,11 +372,26 @@
       "progress": 100,
       "category": "Quality",
       "steps": [
-        {"name": "50-point title scoring rubric (10 criteria)", "status": "done"},
-        {"name": "10 proven title formula templates", "status": "done"},
-        {"name": "Thumbnail design rules (mobile + TV optimized)", "status": "done"},
-        {"name": "Pre-publish checklist + kill criteria", "status": "done"},
-        {"name": "A/B title testing protocol (5 options per video)", "status": "done"}
+        {
+          "name": "50-point title scoring rubric (10 criteria)",
+          "status": "done"
+        },
+        {
+          "name": "10 proven title formula templates",
+          "status": "done"
+        },
+        {
+          "name": "Thumbnail design rules (mobile + TV optimized)",
+          "status": "done"
+        },
+        {
+          "name": "Pre-publish checklist + kill criteria",
+          "status": "done"
+        },
+        {
+          "name": "A/B title testing protocol (5 options per video)",
+          "status": "done"
+        }
       ]
     },
     {
@@ -191,11 +401,26 @@
       "progress": 100,
       "category": "Quality",
       "steps": [
-        {"name": "3-stage pull protocol (T+0, T+7, T+30)", "status": "done"},
-        {"name": "Prediction vs actuals comparison + error tracking", "status": "done"},
-        {"name": "Signal recalibration at 5/10/15 videos", "status": "done"},
-        {"name": "Monthly retrospective template", "status": "done"},
-        {"name": "7 continuous improvement triggers", "status": "done"}
+        {
+          "name": "3-stage pull protocol (T+0, T+7, T+30)",
+          "status": "done"
+        },
+        {
+          "name": "Prediction vs actuals comparison + error tracking",
+          "status": "done"
+        },
+        {
+          "name": "Signal recalibration at 5/10/15 videos",
+          "status": "done"
+        },
+        {
+          "name": "Monthly retrospective template",
+          "status": "done"
+        },
+        {
+          "name": "7 continuous improvement triggers",
+          "status": "done"
+        }
       ]
     },
     {
@@ -205,10 +430,22 @@
       "progress": 100,
       "category": "Intelligence",
       "steps": [
-        {"name": "6 audience segments from real demographics", "status": "done"},
-        {"name": "Content-to-segment mapping", "status": "done"},
-        {"name": "Underserved segment analysis", "status": "done"},
-        {"name": "Segment-aware idea board scoring + gap flagging", "status": "done"}
+        {
+          "name": "6 audience segments from real demographics",
+          "status": "done"
+        },
+        {
+          "name": "Content-to-segment mapping",
+          "status": "done"
+        },
+        {
+          "name": "Underserved segment analysis",
+          "status": "done"
+        },
+        {
+          "name": "Segment-aware idea board scoring + gap flagging",
+          "status": "done"
+        }
       ]
     },
     {
@@ -218,10 +455,22 @@
       "progress": 100,
       "category": "Pipeline",
       "steps": [
-        {"name": "CPM by topic ($22.13 RPM evergreen, $15.57 CPM ETFs)", "status": "done"},
-        {"name": "Seasonal patterns (Q4/Q1 peak)", "status": "done"},
-        {"name": "Revenue projection model (low/mid/high)", "status": "done"},
-        {"name": "Quarterly calendar template + 12-week sample", "status": "done"}
+        {
+          "name": "CPM by topic ($22.13 RPM evergreen, $15.57 CPM ETFs)",
+          "status": "done"
+        },
+        {
+          "name": "Seasonal patterns (Q4/Q1 peak)",
+          "status": "done"
+        },
+        {
+          "name": "Revenue projection model (low/mid/high)",
+          "status": "done"
+        },
+        {
+          "name": "Quarterly calendar template + 12-week sample",
+          "status": "done"
+        }
       ]
     },
     {
@@ -231,10 +480,22 @@
       "progress": 0,
       "category": "Pipeline",
       "steps": [
-        {"name": "Flag evergreen videos still getting search traffic", "status": "pending"},
-        {"name": "Identify refresh candidates (6+ months, high search)", "status": "pending"},
-        {"name": "Updated version template", "status": "pending"},
-        {"name": "Integration into idea board", "status": "pending"}
+        {
+          "name": "Flag evergreen videos still getting search traffic",
+          "status": "pending"
+        },
+        {
+          "name": "Identify refresh candidates (6+ months, high search)",
+          "status": "pending"
+        },
+        {
+          "name": "Updated version template",
+          "status": "pending"
+        },
+        {
+          "name": "Integration into idea board",
+          "status": "pending"
+        }
       ]
     },
     {
@@ -244,32 +505,203 @@
       "progress": 0,
       "category": "Intelligence",
       "steps": [
-        {"name": "Analyze suggested video traffic for audience overlap", "status": "pending"},
-        {"name": "Identify top collab candidates", "status": "pending"},
-        {"name": "Outreach strategy framework", "status": "pending"}
+        {
+          "name": "Analyze suggested video traffic for audience overlap",
+          "status": "pending"
+        },
+        {
+          "name": "Identify top collab candidates",
+          "status": "pending"
+        },
+        {
+          "name": "Outreach strategy framework",
+          "status": "pending"
+        }
       ]
     },
     {
       "id": "agent-specs",
       "name": "Agent Specifications",
-      "status": "queued",
-      "progress": 0,
+      "status": "active",
+      "progress": 60,
       "category": "Infrastructure",
       "steps": [
-        {"name": "Research Agent spec", "status": "pending"},
-        {"name": "Script Agent spec", "status": "pending"},
-        {"name": "Editorial Packaging Agent spec", "status": "pending"},
-        {"name": "Idea Scout Agent spec", "status": "pending"}
+        {
+          "name": "Hook Agent spec",
+          "status": "done"
+        },
+        {
+          "name": "Visual Agent spec",
+          "status": "done"
+        },
+        {
+          "name": "QA Agent spec",
+          "status": "done"
+        },
+        {
+          "name": "Title Agent spec",
+          "status": "done"
+        },
+        {
+          "name": "Script Body Agent spec (formalized)",
+          "status": "pending"
+        },
+        {
+          "name": "Idea Scout Agent spec (formalized)",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "id": "silicon-photonics-production",
+      "name": "Silicon Photonics Full Package",
+      "status": "complete",
+      "progress": 100,
+      "category": "Pipeline",
+      "steps": [
+        {
+          "name": "Research pack + financial deep dive",
+          "status": "done"
+        },
+        {
+          "name": "Script iterations to final (v1→v6)",
+          "status": "done"
+        },
+        {
+          "name": "Editorial package finalized",
+          "status": "done"
+        },
+        {
+          "name": "Final delivery (.md + .docx)",
+          "status": "done"
+        },
+        {
+          "name": "Visual set updated (10 mobile-friendly HTML visuals)",
+          "status": "done"
+        }
+      ],
+      "completedDate": "2026-02-15"
+    },
+    {
+      "id": "newsletter-intelligence",
+      "name": "Newsletter Intelligence System",
+      "status": "active",
+      "progress": 45,
+      "category": "Intelligence",
+      "steps": [
+        {
+          "name": "Brian newsletter sample links ingested",
+          "status": "done"
+        },
+        {
+          "name": "Brian Newsletter Voice Profile v1 drafted",
+          "status": "done"
+        },
+        {
+          "name": "Top creator subscription list v1",
+          "status": "done"
+        },
+        {
+          "name": "Weekly newsletter analysis template",
+          "status": "done"
+        },
+        {
+          "name": "Dedicated inbox/OAuth ingestion setup",
+          "status": "pending"
+        },
+        {
+          "name": "First weekly newsletter intelligence brief",
+          "status": "pending"
+        }
       ]
     }
   ],
   "stats": {
-    "totalProjects": 18,
-    "completed": 12,
-    "active": 0,
-    "queued": 6,
+    "totalProjects": 20,
+    "completed": 14,
+    "active": 4,
+    "queued": 2,
     "scriptsAnalyzed": 311,
-    "frameworksBuilt": 16,
+    "frameworksBuilt": 19,
     "competitorVideosTracked": 232
+  },
+  "youtubeAnalytics": {
+    "pullTimestamp": "2026-02-15T20:45:01.598312+00:00",
+    "subscriberCount": 337000,
+    "totalViews": 19199955,
+    "videoCount": 284,
+    "newVideosSince2026-02-14": 0,
+    "latestVideos": [
+      {
+        "videoId": "nJ3pJL14nIQ",
+        "title": "Pelosi's Portfolio: 556% AI Boom Returns vs S&P 500! #shorts",
+        "publishedAt": "2026-02-07T11:13:27Z",
+        "views": 15320,
+        "viewsPerDay": 1824.48
+      },
+      {
+        "videoId": "yTMibJcrP-U",
+        "title": "Ackman & Pelosi: Billionaires' AI & Growth Stock Secrets Revealed! #shorts",
+        "publishedAt": "2026-02-06T12:31:26Z",
+        "views": 8663,
+        "viewsPerDay": 927.24
+      },
+      {
+        "videoId": "Au4ST1Bpcug",
+        "title": "Invest in AI & Tech: My Future-Proof Portfolio Strategy #shorts",
+        "publishedAt": "2026-02-05T12:33:17Z",
+        "views": 16682,
+        "viewsPerDay": 1613.11
+      },
+      {
+        "videoId": "sUmiOJeKwy8",
+        "title": "Your Portfolio Mirrors Your Worldview: Investing for the Future! #shorts",
+        "publishedAt": "2026-02-04T11:16:22Z",
+        "views": 8452,
+        "viewsPerDay": 741.74
+      },
+      {
+        "videoId": "JkQn9MoFlHk",
+        "title": "4 Investment Legends: $10K to $65K in 5 Years! #shorts",
+        "publishedAt": "2026-02-03T11:55:55Z",
+        "views": 23033,
+        "viewsPerDay": 1862.39
+      },
+      {
+        "videoId": "xH_ujUEdku0",
+        "title": "$7 Trillion AI Wave: It's All About Power & Concrete! #shorts",
+        "publishedAt": "2026-02-02T11:33:36Z",
+        "views": 13149,
+        "viewsPerDay": 982.52
+      },
+      {
+        "videoId": "t2b-mdFg8rI",
+        "title": "🚨URGENT: The $2.4 Trillion AI Infrastructure Reset 📈",
+        "publishedAt": "2026-01-31T14:31:00Z",
+        "views": 87062,
+        "viewsPerDay": 5705.34
+      },
+      {
+        "videoId": "SP3oZ4oUHsM",
+        "title": "AI Portfolio CRUSHES S&P 500: 932% Return! #shorts",
+        "publishedAt": "2026-01-29T11:58:35Z",
+        "views": 18091,
+        "viewsPerDay": 1041.77
+      },
+      {
+        "videoId": "OsEeetpStF4",
+        "title": "I Was Ranked #1: My Top Stock Picks for 2026 📈",
+        "publishedAt": "2026-01-25T14:15:02Z",
+        "views": 276931,
+        "viewsPerDay": 13019.29
+      },
+      {
+        "videoId": "UVsh8kl_y6k",
+        "title": "AI Stack: How To Allocate $100 For BIG Returns! #shorts",
+        "publishedAt": "2026-01-22T12:40:36Z",
+        "views": 51222,
+        "viewsPerDay": 2104.75
+      }
+    ]
   }
 }
