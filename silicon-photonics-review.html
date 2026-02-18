@@ -1,433 +1,213 @@
 <!DOCTYPE html>
-<html><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Silicon Photonics Script v4 — Review Draft</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silicon Photonics Script v5.1 Final — Review</title>
 <style>
-  body { 
-    max-width: 800px; margin: 0 auto; padding: 20px; 
-    font-family: Georgia, serif; font-size: 18px; line-height: 1.7;
-    color: #333; background: #fafafa;
-  }
-  h1 { color: #1a5f7a; border-bottom: 2px solid #1a5f7a; padding-bottom: 10px; }
-  h2 { color: #2c3e50; margin-top: 40px; }
-  h3 { color: #34495e; }
-  p { margin: 8px 0; }
-  hr { border: none; border-top: 1px solid #ddd; margin: 30px 0; }
-  strong { color: #1a5f7a; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Georgia, 'Times New Roman', serif; background: #faf9f6; color: #2d2d2d; line-height: 1.75; padding: 1.5rem; max-width: 780px; margin: 0 auto; }
+h1 { font-size: 1.6rem; margin-bottom: 0.3rem; color: #1a1a1a; }
+.meta { font-size: 0.85rem; color: #888; margin-bottom: 1.5rem; border-bottom: 1px solid #ddd; padding-bottom: 1rem; }
+.script p { margin-bottom: 1.2rem; font-size: 1.05rem; }
+.broll { background: #eef6ff; border-left: 3px solid #4a90d9; padding: 0.5rem 0.8rem; margin: 1rem 0; font-size: 0.85rem; color: #3a6ea5; font-family: 'Helvetica Neue', Arial, sans-serif; border-radius: 3px; }
+.editor-notes { margin-top: 3rem; padding-top: 1.5rem; border-top: 2px solid #ccc; }
+.editor-notes h2 { font-size: 1.3rem; margin-bottom: 0.8rem; color: #555; }
+.editor-notes h3 { font-size: 1.05rem; margin: 1.2rem 0 0.5rem; color: #666; }
+.editor-notes ul { margin-left: 1.2rem; margin-bottom: 0.8rem; font-size: 0.9rem; color: #555; font-family: 'Helvetica Neue', Arial, sans-serif; }
+.editor-notes li { margin-bottom: 0.3rem; }
+.changes { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 1rem 1.2rem; margin-bottom: 2rem; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 0.88rem; }
+.changes h3 { margin-bottom: 0.5rem; color: #166534; font-size: 0.95rem; }
+.changes ul { margin-left: 1rem; color: #15803d; }
+.changes li { margin-bottom: 0.25rem; }
 </style>
-</head><body>
+</head>
+<body>
+
 <h1>Silicon Photonics — The AI Bottleneck Nobody's Talking About</h1>
-<h2>BWB Script Draft v4 (FINAL) | February 2026</h2>
-<h2>Supply Chain Framework — Full Ecosystem Walkthrough</h2>
-<br>
-<hr>
-<br>
-<p>Everyone's fighting over which AI chip stock to buy — NVIDIA, AMD, Broadcom. But here's what they're missing: the GPUs aren't the bottleneck anymore. The bottleneck is the cable connecting them.</p>
-<br>
-<p style="color:#888;font-style:italic">[B-ROLL: data center interior, close-up of copper cable bundles]</p>
-<br>
-<p>We already know power is a bottleneck — I've covered that. Nuclear, natural gas, the whole energy story. But there's a second bottleneck that almost nobody is talking about. Right now, AI data centers use copper wires to move data between thousands of GPUs. And at 1.6 terabits per second — the speed required for next-gen AI training — copper generates so much heat that it literally can't go any faster. The industry has one option: replace copper with light. It's called silicon photonics, and NVIDIA just went all-in — announcing co-packaged optical switches and a direct partnership with a specialty chipmaker that most investors have never heard of. This is the plumbing play for AI.</p>
-<br>
-<p>So in this video, I'm going to break down what silicon photonics actually is — in plain English. I'll cover why NVIDIA just went all-in on this technology. And then I'm going to walk you through the entire silicon photonics supply chain — from the foundries that manufacture the chips, to the companies building the optical components, all the way up to the architects designing the systems. Every company worth looking at in this space. I am not a financial advisor. This is not financial advice. This is just my research and my perspective as an investor.</p>
-<br>
-<p>Let's get into it.</p>
-<br>
-<p style="color:#888;font-style:italic">[B-ROLL: transition graphic]</p>
-<br>
-<hr>
-<br>
-<h2>The Problem: Copper Is Dying</h2>
-<br>
-<p>Here's what most people miss about AI infrastructure. Everyone talks about the GPUs — the processing power. And yeah, that matters. But training a model like GPT-5 requires thousands of GPUs working together simultaneously. They have to talk to each other constantly. And the network connecting those GPUs? That's now the bottleneck. Not the chips themselves.</p>
-<br>
-<p style="color:#888;font-style:italic">[B-ROLL: simple animation — GPUs connected by wires, data flowing]</p>
-<br>
-<p>Right now, most data centers use copper cables to move data between chips. And copper works fine — up to a point. The industry is moving from 800 Gigabit connections to 1.6 Terabit connections. That's 1,600 Gigabits per second. For context, your home internet is probably 1 Gbps. We're talking 1,600 times faster than that.</p>
-<br>
-<p>And here's the problem. At those speeds, copper generates too much heat. It eats too much power. And it physically cannot keep up beyond about 3 meters of distance. So you're building these massive AI factories with millions of GPUs — and the wires connecting them are the weakest link.</p>
-<br>
-<p>It's like building a Formula 1 car and then connecting the engine to the wheels with a rubber band. At some point, the rubber band snaps.</p>
-<br>
-<hr>
-<br>
-<h2>The Solution: Light on a Chip</h2>
-<br>
-<p>So what's the fix? Silicon photonics.</p>
-<br>
-<p style="color:#888;font-style:italic">[B-ROLL: fiber optic light pulses, silicon wafer manufacturing]</p>
-<br>
-<p>And I know that sounds complicated. But the concept is actually pretty simple. Instead of pushing data through copper using electrical signals, you push it through using light — photons instead of electrons. And the clever part is you do it on a regular silicon chip. The same kind of chip used to make processors. Which means you can manufacture these in existing semiconductor fabs, making them way more scalable and cheaper than traditional fiber optics.</p>
-<br>
-<p>Here's why this matters right now. A traditional 1.6 Terabit transceiver — the device that converts data into optical signals — uses about 30 watts of power. More than half of that is just the digital signal processor. NVIDIA's co-packaged silicon photonics approach eliminates that DSP entirely. The result? 3.5 times lower power consumption.</p>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show NVIDIA technical blog graphic comparing power consumption — source: developer.nvidia.com]</p>
-<br>
-<p>And when you're running a data center that consumes as much electricity as a small city, 3.5x power savings is a massive deal. That's not incremental. That's transformational.</p>
-<br>
-<p>The market reflects this. Silicon photonics is roughly a $3 billion market today. And depending on which research firm you ask — Precedence Research, Mordor Intelligence, Fortune Business Insights — it's growing at 25 to 29% annually. Conservative estimates put it at $10 billion by 2030. The most aggressive estimates say nearly $29 billion by 2034.</p>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show market size comparison graphic — $3B today → $10-29B by 2030-2034]</p>
-<br>
-<p>And LightCounting — one of the leading optical industry analysts — published a report in November 2025 literally titled "2026: The Year of Silicon Photonics."</p>
-<br>
-<hr>
-<br>
-<h2>NVIDIA's Big Bet</h2>
-<br>
-<p>Now here's where it gets really interesting for investors.</p>
-<br>
-<p>At GTC 2025 — NVIDIA's annual conference — Jensen Huang unveiled their Spectrum-X and Quantum-X networking switches. Both built with co-packaged silicon photonics. This was NVIDIA telling the entire industry: the future of AI networking runs on light, not copper.</p>
-<br>
-<p style="color:#888;font-style:italic">[B-ROLL: Jensen Huang GTC 2025 keynote footage]</p>
-<br>
-<p>And then on February 5th — just 10 days ago — NVIDIA announced a direct partnership with Tower Semiconductor to build 1.6 Terabit optical modules designed specifically for NVIDIA networking protocols. Gilad Shainer, NVIDIA's SVP of Networking, said: "The exponential growth of AI is driving the need for a new class of high-speed, scalable networking."</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: Tower Semi + NVIDIA press release — towersemi.com]</p>
-<br>
-<p>And if you've followed NVIDIA for any amount of time, you know the pattern. When Jensen builds a technology into the NVIDIA stack, the entire supply chain follows. It happened with CUDA. It happened with InfiniBand. And now it's happening with silicon photonics.</p>
-<br>
-<p>So the question becomes — who benefits? And I want to be thorough here. I'm not just going to show you my top three picks and call it a day. I'm going to walk you through every company that has meaningful exposure to this theme. Because I think the best way to understand a technology like this is to follow the supply chain — layer by layer. Who manufactures the chips. Who builds the optical components. Who designs the systems. And who's trying to keep up.</p>
-<br>
-<hr>
-<br>
-<h2>How I'm Organizing This</h2>
-<br>
-<p>Think of the silicon photonics ecosystem like a pyramid. At the base, you've got the foundries — the factories that actually manufacture these chips. One layer up, you've got the component makers — the companies building the lasers and transceivers. Then at the top, you've got the architects — the companies designing the networking systems that tie it all together. And off to the side, you've got the legacy players — big companies that are relevant to the conversation but coming at it from a different angle.</p>
-<br>
-<p>I'm going to walk you through each layer. And at the very end, I'll give you my personal ranking — strongest to weakest — so you can see exactly where my conviction sits.</p>
-<br>
-<p>Let's start at the foundation.</p>
-<br>
-<hr>
-<br>
-<h2>THE FOUNDRIES — Who Manufactures the Chips</h2>
-<br>
-<p>Everything in silicon photonics starts with manufacturing. Somebody has to take a silicon wafer and etch photonic circuits onto it — lasers, waveguides, modulators — all at the nanometer scale. That's what foundries do. And in this space, two public companies stand out.</p>
-<br>
-<hr>
-<br>
-<h3>Tower Semiconductor (TSEM)</h3>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show TSEM stock chart + company logo]</p>
-<br>
-<p>Tower Semiconductor is a specialty analog foundry. They don't design chips — they manufacture them. Think of them as the factory that makes the plumbing. And their silicon photonics and RF infrastructure segment just had a breakout year. Revenue in that segment grew 75% in 2025 compared to 2024. That was their fastest-growing business.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: TSEM Q4 2025 earnings highlights — Benzinga]</p>
-<br>
-<p>Now let's talk numbers. Total revenue for 2025 came in at $1.57 billion — up about 9% year over year. They're guiding Q1 2026 revenue to $412 million, plus or minus 5%. And their updated 2028 model is targeting $2.84 billion in revenue. So they're projecting to nearly double the business in three years.</p>
-<br>
-<p>But here's the big move. Tower just committed $920 million in CapEx for 2026 and 2027 — specifically aimed at 5x-ing their silicon photonics and SiGe capacity. And over 70% of that new capacity is already reserved or prepaid by customers.</p>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show CapEx commitment graphic — $920M, 5x capacity, 70%+ reserved]</p>
-<br>
-<p>That's a huge commitment for a company doing $1.6 billion in revenue. But when 70% of the capacity is already spoken for before you even build it — that tells you something about demand.</p>
-<br>
-<p>And then there's the NVIDIA partnership. This is the foundry NVIDIA chose for their 1.6T optical modules. That's a stamp of approval that matters.</p>
-<br>
-<p>Now the valuation. The stock is trading at a forward P/E around 45. Price-to-sales ratio is about 9.2. That's not cheap. But here's something I like — their balance sheet shows essentially zero long-term debt. For a company making this kind of capital commitment, that's a strong position to be in. Analysts have a consensus target of roughly $157 — and Benchmark just raised their target to $165. At a current price around $130-135, that implies 15 to 25% upside depending on which estimate you use.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: StockAnalysis.com TSEM forecast]</p>
-<br>
-<p>The bear case? That $920 million CapEx is enormous. If AI infrastructure spending slows — or if TSMC enters and commoditizes the manufacturing — Tower could be overbuilt. Customer concentration is a real risk too. But right now, the demand signals are about as strong as you'll find in this space.</p>
-<br>
-<hr>
-<br>
-<h3>GlobalFoundries (GFS)</h3>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show GFS stock chart + company logo]</p>
-<br>
-<p>GlobalFoundries is the third-largest foundry in the world. And most people don't think of them as a silicon photonics play. But they should.</p>
-<br>
-<p>On their Q4 2025 earnings call — literally four days ago — GFS said they doubled silicon photonics revenue within communications infrastructure and data center to over $200 million in 2025. And they expect to nearly double it again in 2026. So we're talking $200 million going to roughly $400 million.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: GFS Q4 2025 earnings transcript quote — Motley Fool]</p>
-<br>
-<p>Now in the context of GFS's total revenue — about $6.8 billion — silicon photonics is still small. Maybe 3% of the total. But it's the fastest-growing segment. And they just expanded to 46,000 wafers per month for SiPho production.</p>
-<br>
-<p>The valuation is actually one of the more attractive you'll find in this space. Forward P/E around 26. PEG ratio of 0.89 — which is solid. They're sitting on $1.8 billion in cash and generating over $1 billion in free cash flow.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: StockAnalysis.com GFS forecast]</p>
-<br>
-<p>The bull case is that GFS gives you silicon photonics exposure on top of a stable, diversified foundry business. You're getting a $200-to-$400 million SiPho growth story inside a company that already generates a billion dollars in free cash flow.</p>
-<br>
-<p>The bear case is that overall revenue growth has been basically flat — up just 0.6% year over year. The base business isn't exciting. You're buying this for the SiPho kicker, not the core. And at 3% of revenue, it's still a small piece of a big company.</p>
-<br>
-<hr>
-<br>
-<h3>The Wild Card: TSMC</h3>
-<br>
-<p>Now before we leave the foundry layer — I need to mention TSMC. The 800-pound gorilla. TSMC announced their COUPE platform for co-packaged optics mass production in 2026. And this cuts both ways. TSMC entering silicon photonics manufacturing is a massive validation of the technology. But it's also a competitive threat to Tower Semiconductor and GlobalFoundries. When TSMC enters any market, they tend to drive prices down. That's great for adoption. Not great for smaller foundries trying to maintain margins. This is probably the single biggest risk factor hanging over the foundry layer.</p>
-<br>
-<hr>
-<br>
-<p>Now — the foundries are only half the story. Somebody has to build the actual optical components that go on top of those chips. The lasers. The transceivers. The parts that actually convert electrical signals into light.</p>
-<br>
-<hr>
-<br>
-<h2>THE COMPONENT MAKERS — Who Builds the Optical Parts</h2>
-<br>
-<p>This is the middle layer of the stack. The foundries make the chips. But the component makers build the modules — the transceivers, the lasers, the optical engines that plug into the networking equipment. Without these companies, you've got a silicon chip with no way to move light.</p>
-<br>
-<hr>
-<br>
-<h3>Coherent (COHR)</h3>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show COHR stock chart + company logo]</p>
-<br>
-<p>Coherent — formerly II-VI — is one of the largest optical transceiver makers globally. They make the lasers, the photonic components, and the transceivers that actually convert electrical signals to optical signals. If Tower makes the foundry, Coherent makes the parts that go on top of it.</p>
-<br>
-<p>And their numbers are impressive. Revenue hit a record $1.5 billion in their most recent quarter — up 24% year over year. The full-year revenue run rate is now around $6.3 billion and climbing. And they're seeing acceleration in 800G and 1.6T transceiver demand heading into calendar 2026.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: StockAnalysis.com COHR forecast]</p>
-<br>
-<p>They're also expanding into new product lines. Optical circuit switches for AI data centers. Diamond silicon carbide composites for data center cooling. So it's not a one-trick business.</p>
-<br>
-<p>Now here's where it gets interesting from a valuation standpoint. The trailing P/E is over 200 — which looks scary on the surface. But the forward P/E drops to about 30. And the PEG ratio is just 0.34. That tells you the market expects significant earnings growth ahead — and the price relative to that growth is actually reasonable. Gross margins are around 35% and improving.</p>
-<br>
-<p>The bear case is that Coherent carries about $3.5 billion in long-term debt from their merger with II-VI. And the business is diversified — lasers, materials, industrial products — so you're not getting a pure silicon photonics play. But if the 1.6T transition plays out the way the industry expects, Coherent is sitting right in the middle of it.</p>
-<br>
-<hr>
-<br>
-<h3>Lumentum (LITE)</h3>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show LITE stock chart + company logo]</p>
-<br>
-<p>Lumentum makes the lasers and optical components that go into silicon photonics modules. They're a key supplier of EMLs — externally modulated lasers — and components for 800G and 1.6T transceivers. This is picks and shovels within picks and shovels.</p>
-<br>
-<p>And the growth numbers are strong. Revenue came in at $1.65 billion for fiscal 2025, up 21% year over year. But the revenue run rate is actually accelerating — the trailing twelve months is about $2.1 billion, which is up over 52% compared to the prior period. That's fast.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: StockAnalysis.com LITE forecast]</p>
-<br>
-<p>But here's where I have to be honest with you. The valuation on this one makes me nervous. The forward P/E is about 95. Price-to-sales is over 19. Price-to-book is 47. Those are big numbers. And the free cash flow is still negative — negative $105 million over the trailing twelve months. So you're paying a premium for growth that hasn't fully materialized in the bottom line yet.</p>
-<br>
-<p>The analyst target is around $566, and the stock has already had a massive run — from about $46 at the 52-week low to the $500-600 range. So a lot of the good news may already be priced in.</p>
-<br>
-<p>The bear case is also that their telecom segment — the non-AI business — has been weak. And they carry about $2.6 billion in long-term debt.</p>
-<br>
-<hr>
-<br>
-<p>So we've got the foundries making the chips. We've got the component makers building the optical parts. Now let's move up the stack to the companies that are designing the actual networking systems — the ones deciding how all these pieces fit together.</p>
-<br>
-<hr>
-<br>
-<h2>THE ARCHITECTS — Who Designs the Systems</h2>
-<br>
-<p>These are the companies setting the architecture for how data moves through AI data centers. They're designing the networking chips, the switching platforms, and the protocols that determine which foundries and which components get used. In a lot of ways, this is where the real power sits in the supply chain.</p>
-<br>
-<hr>
-<br>
-<h3>Marvell Technology (MRVL)</h3>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show MRVL stock chart + company logo]</p>
-<br>
-<p>Marvell is a data infrastructure semiconductor company. Networking, storage, custom compute. And they just made a move that I think is under-appreciated.</p>
-<br>
-<p>In December 2025, Marvell announced they're acquiring Celestial AI for over $5 billion. Celestial AI makes something called "Photonic Fabric" — a technology that claims 25x greater bandwidth at 10x lower latency than standard co-packaged optics. They use vertical 3D photonic packaging directly on XPUs.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: Marvell + Celestial AI acquisition press release]</p>
-<br>
-<p>Now $5 billion is a lot of money for a pre-revenue company. But Marvell's CEO said something that stuck with me: "Every connection point in the data center must move from copper to optical." If that's true — and the physics suggests it is — then owning the most advanced photonic interconnect technology could be a significant competitive advantage.</p>
-<br>
-<p>And here's what I like about Marvell's valuation. The forward P/E is about 23. The PEG ratio is 1.5 — reasonable for a growth company. Revenue run rate is $7.8 billion, up 45% year over year. And they're generating $1.4 billion in free cash flow.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: StockAnalysis.com MRVL forecast]</p>
-<br>
-<p>Now I do need to be transparent — Marvell is technically unprofitable on a GAAP basis. Net income is negative due to amortization from prior acquisitions. That's something to keep in mind. But on a cash flow basis, the business is healthy.</p>
-<br>
-<p>The risk is integration. Acquiring a pre-revenue deeptech startup for $5 billion-plus is a big bet. If Celestial AI's photonic fabric doesn't work at scale, that's a lot of money out the door. But if it does — this could be the company that leapfrogs everyone else in the photonic interconnect race.</p>
-<br>
-<hr>
-<br>
-<h3>Broadcom (AVGO)</h3>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show AVGO stock chart + company logo]</p>
-<br>
-<p>Broadcom is the industry leader in co-packaged optics. They just announced their third-generation CPO with 200 Gigabit-per-lane capability. And they've committed to a fourth generation at 400G per lane. They've already shipped over 20 million 100G optical channels and are targeting 5 million 800G units.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: Broadcom CPO announcement — Broadcom IR]</p>
-<br>
-<p>Now here's the thing with Broadcom. Revenue is $63.9 billion. They generated $26.9 billion in free cash flow last year. Gross margins are nearly 68%. This is an absolute machine of a business. Revenue grew 24% year over year — for a company this size, that's remarkable.</p>
-<br>
-<p>The forward P/E is about 32. Analyst target is around $457. And the PEG ratio is 0.9 — actually very reasonable for the quality of this business.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: StockAnalysis.com AVGO forecast]</p>
-<br>
-<p>But silicon photonics is a rounding error in Broadcom's total revenue. You're not buying Broadcom for silicon photonics exposure specifically. You're buying one of the best semiconductor companies in the world — and the co-packaged optics leadership is a bonus.</p>
-<br>
-<hr>
-<br>
-<h3>NVIDIA (NVDA) — The Demand Creator</h3>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show NVDA stock chart + company logo]</p>
-<br>
-<p>Now I'm not including NVIDIA as a silicon photonics "pick" exactly. And here's why. NVIDIA is the demand creator, not the supply chain play. You probably already know whether you own NVIDIA or not.</p>
-<br>
-<p>That said — their commitment to silicon photonics is the single biggest validation of this entire thesis. When Jensen says the future of AI networking runs on co-packaged optics — and then partners with a specific foundry to build it — every company on this list benefits.</p>
-<br>
-<p style="color:#888;font-style:italic">[B-ROLL: NVIDIA GTC networking demo footage]</p>
-<br>
-<p>The numbers are insane. Revenue of $130 billion, up 114% year over year. $60 billion in free cash flow. Forward P/E of about 24. For a company growing this fast, that's actually not unreasonable. And the PEG ratio is 0.7.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: StockAnalysis.com NVDA forecast]</p>
-<br>
-<p>But here's the thing — silicon photonics is a strategic initiative for NVIDIA, not a revenue driver. You'd be buying NVIDIA for the GPU business, the AI compute dominance, the networking platform. The SiPho angle is a bonus, not the thesis.</p>
-<br>
-<hr>
-<br>
-<p>Now — we've covered the foundries, the component makers, and the architects. But there are two more companies that come up in every silicon photonics conversation. And I think it's important you hear about them — because the full picture matters.</p>
-<br>
-<hr>
-<br>
-<h2>THE LEGACY PLAYERS — Who's Trying to Keep Up</h2>
-<br>
-<p>These are large, established companies with real history in networking or semiconductors. They have silicon photonics exposure — but they're coming at it from a very different position than the companies we just covered.</p>
-<br>
-<hr>
-<br>
-<h3>Intel (INTC)</h3>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show INTC stock chart + company logo]</p>
-<br>
-<p>Now this one is going to be a little uncomfortable. Because Intel is genuinely a pioneer in silicon photonics. They've been researching this technology since 2004. They demonstrated the first fully integrated optical I/O chiplet in January 2025. They have deep IP in this space.</p>
-<br>
-<p>But — and this is a big but — Intel's patent filings in silicon photonics have plummeted since 2023. They're still at the R&D stage while TSMC is planning mass production. And the company as a whole is struggling. Revenue has declined three years in a row — from $79 billion in 2021 down to $53 billion. Net income was negative $267 million last year. The prior year was a loss of nearly $19 billion.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: StockAnalysis.com INTC forecast]</p>
-<br>
-<p>The stock has had a big bounce recently — from around $18 at the lows to the mid-$50s. But the forward P/E is 91, which is hard to justify when the business is unprofitable and revenue is flat-to-declining.</p>
-<br>
-<p>Look — if Intel Foundry Services gains traction and they can leverage their SiPho IP as a differentiator, there's a story there. But that's a big "if." And the company has much bigger problems to solve first.</p>
-<br>
-<hr>
-<br>
-<h3>Cisco (CSCO)</h3>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show CSCO stock chart + company logo]</p>
-<br>
-<p>Cisco acquired Acacia Communications back in 2021 for about $4.5 billion. Acacia makes silicon photonics-based coherent optics — DSPs and optical modules. And Cisco has been integrating that technology into their routers and switches.</p>
-<br>
-<p>The financials here are actually solid from a business quality standpoint. Revenue is about $57 billion. Forward P/E of 18. They generate over $13 billion in free cash flow. Gross margins are 65%. This is a profitable, stable business.</p>
-<br>
-<p style="color:#888;font-style:italic">[SCREENSHOT: StockAnalysis.com CSCO forecast]</p>
-<br>
-<p>But here's the issue — Acacia is a tiny piece of Cisco's overall business. Silicon photonics exposure relative to total revenue is minimal. And Cisco tends to move slowly. They're not the company that's going to lead the 1.6T charge. They'll adopt it — but they won't drive it.</p>
-<br>
-<hr>
-<br>
-<h2>One More Worth Mentioning</h2>
-<br>
-<p><strong>STMicroelectronics (STM)</strong> — Re-entered silicon photonics in early 2025 with their PIC100 process, built in collaboration with AWS at their 300mm fab in France. The fact that AWS is investing directly in silicon photonics supply chain tells you something about the demand side. But STM isn't really a way to play this theme — SiPho is a small piece of their business.</p>
-<br>
-<hr>
-<br>
-<h2>The Risks — Because There Are Always Risks</h2>
-<br>
-<p>Now I wouldn't be doing my job if I didn't talk about what could go wrong. And there are real risks here.</p>
-<br>
-<p><strong>Number one — CapEx overbuilding.</strong> Tower is spending $920 million to 5x capacity. GlobalFoundries is expanding. If AI infrastructure spending hits a wall — and we've seen spending cycles slow before — these companies could end up with expensive, underutilized fabs. This is the number one risk I think about.</p>
-<br>
-<p><strong>Number two — TSMC.</strong> I mentioned this in the foundry section, but it's worth emphasizing. When TSMC enters any market, they tend to commoditize it. Their COUPE platform in 2026 could drive prices down across the board. Great for hyperscalers buying the technology. Not great for smaller foundries trying to maintain margins.</p>
-<br>
-<p><strong>Number three — timing.</strong> The 1.6T ramp could take longer than expected. Standards need to be finalized. Customer qualification cycles are long. Coherent noted that some 1.6T products won't ramp until mid-2026 at the earliest. So if you're expecting immediate revenue acceleration, you might need to be patient.</p>
-<br>
-<p><strong>Number four — valuation.</strong> Several of these stocks have already moved significantly. TSEM jumped 12.6% just on the NVIDIA announcement. Lumentum has run from $46 to $600. If you're looking at forward P/Es of 30 to 95 on some of these names — the question is how much growth is already priced in.</p>
-<br>
-<p><strong>Number five — concentration risk.</strong> The buyer universe is basically 5 to 7 hyperscalers — AWS, Google, Meta, Microsoft, and a few others. If even one of them delays or cancels a major data center buildout, it ripples through the entire supply chain.</p>
-<br>
-<p style="color:#888;font-style:italic">[B-ROLL: stock chart showing recent run-ups]</p>
-<br>
-<p>So please keep in mind — nobody knows exactly how this plays out. I try to be realistic so I can plan ahead. This is not financial advice. Do your own research.</p>
-<br>
-<hr>
-<br>
-<h2>My Personal Ranking — Strongest to Weakest</h2>
-<br>
-<p>Alright — if I had to rank every company we just talked about from strongest play to weakest in the silicon photonics space, here's how I'd stack them:</p>
-<br>
-<p style="color:#888;font-style:italic">[EDITOR: show ranking graphic on screen — hold for 15-20 seconds]</p>
-<br>
-<p>1. <strong>TSEM (Tower Semiconductor)</strong> — Closest thing to a pure play. NVIDIA partner. Zero debt. 75% SiPho segment growth. This is my highest-conviction name on the list.</p>
-<br>
-<p>2. <strong>COHR (Coherent)</strong> — Component leader sitting right in the middle of the 1.6T transition. Record revenue. PEG ratio of 0.34 is hard to ignore at this growth rate.</p>
-<br>
-<p>3. <strong>MRVL (Marvell)</strong> — The Celestial AI acquisition could be a leapfrog move. Forward P/E of 23 gives you the most reasonable valuation among the top names. Integration risk is real, though.</p>
-<br>
-<p>4. <strong>GFS (GlobalFoundries)</strong> — The dark horse. SiPho revenue doubling year over year inside a stable foundry business. PEG of 0.89. Best value play on this list — you just need patience with the flat base business.</p>
-<br>
-<p>5. <strong>AVGO (Broadcom)</strong> — Industry CPO leader inside an absolute machine of a company. If you want exposure to this theme without losing sleep — this is the one. Not the highest upside, but probably the lowest risk.</p>
-<br>
-<p>6. <strong>LITE (Lumentum)</strong> — Great position, great growth, but the valuation is stretched. Forward P/E of 95 with negative free cash flow means you need the 1.6T ramp to be bigger than expected. I'd watch for a pullback.</p>
-<br>
-<p>7. <strong>NVDA (NVIDIA)</strong> — The reason this entire thesis exists. But you're buying NVIDIA for AI compute dominance — not for silicon photonics specifically. The SiPho angle is a bonus.</p>
-<br>
-<p>8. <strong>INTC (Intel)</strong> — A genuine pioneer that's losing its lead. The company has much bigger problems to solve before SiPho becomes a needle-mover. If you're buying Intel, it should be for the broader turnaround.</p>
-<br>
-<p>9. <strong>CSCO (Cisco)</strong> — Solid business, tiny SiPho exposure. If you already own it, the Acacia acquisition is a small tailwind. But I wouldn't buy Cisco because of silicon photonics.</p>
-<br>
-<p>And TSMC is the wild card that both validates the entire thesis and threatens the margins of the foundry players.</p>
-<br>
-<hr>
-<br>
-<h2>Wrapping It Up</h2>
-<br>
-<p>Here's how I think about this. Everyone talks about the AI picks-and-shovels trade — buy the infrastructure instead of trying to pick which AI model wins. And that's smart. But silicon photonics is the picks and shovels within the picks and shovels. It's the plumbing underneath the plumbing.</p>
-<br>
-<p>Every hyperscaler — AWS, Google, Meta, Microsoft — needs this technology. The physics demands it. Copper can't scale. Light can. And 2026 looks like the inflection year.</p>
-<br>
-<p>We walked through the whole supply chain today. The foundries manufacturing the chips — Tower and GlobalFoundries. The component makers building the optical parts — Coherent and Lumentum. The architects designing the systems — Marvell, Broadcom, and NVIDIA as the demand creator. And the legacy players trying to keep up — Intel and Cisco.</p>
-<br>
-<p>The weaker plays — I covered them because I think you deserve to see the full picture. Even the ones I'm not as excited about. That's how I build trust with you. I'm not going to hide a company from you just because the thesis is thinner.</p>
-<br>
-<p style="color:#888;font-style:italic">[B-ROLL: data center exterior, wide shot]</p>
-<br>
-<p>I'll have links to all the research and resources I used in the description below so you can dig into these yourself. Thanks so much for watching.</p>
-<br>
-<hr>
-<br>
-<h2>Editor Notes</h2>
-<br>
-<h3>B-Roll Suggestions</h3>
-<p>- <strong>0:00-0:15</strong> — Data center interior footage, close-ups of copper cables and fiber optics</p>
-<p>- <strong>0:15-0:30</strong> — Quick-cut montage: NVIDIA-Tower press release headline + GFS earnings headline</p>
-<p>- <strong>0:30-1:00</strong> — Transition graphic for intro</p>
-<p>- <strong>2:00-2:30</strong> — Simple animation: GPUs connected by wires, data flowing and bottlenecking</p>
-<p>- <strong>2:30-3:00</strong> — Formula 1 car footage (for the rubber band analogy)</p>
-<p>- <strong>3:00-4:00</strong> — Fiber optic light pulse footage, silicon wafer manufacturing, clean room footage</p>
-<p>- <strong>5:00-5:30</strong> — Jensen Huang GTC 2025 keynote footage (networking segment)</p>
-<p>- <strong>6:00</strong> — Tower Semi + NVIDIA press release screenshot</p>
-<p>- <strong>Throughout stock sections</strong> — Company logos, stock charts, building/HQ footage</p>
-<p>- <strong>Architect section</strong> — NVIDIA GTC networking demo footage</p>
-<p>- <strong>Risk section</strong> — Stock charts showing recent run-ups</p>
-<p>- <strong>End</strong> — Data center exterior wide shot</p>
-<br>
+<div class="meta">BWB Script v5.1 (Final) · February 2026 · ~3,600 words · Est. 20–23 min</div>
+
+<div class="changes">
+<h3>✅ v5 → v5.1 Changes Applied</h3>
+<ul>
+<li><strong>Intro cut from ~800 → ~400 words.</strong> NVIDIA/Jensen detail moved to NVDA segment.</li>
+<li><strong>All stock transitions</strong> now have conversational lead-ins (verified each one).</li>
+<li><strong>No standalone risk section</strong> — risks woven into each stock segment only.</li>
+<li><strong>Time-relative language removed</strong> — "just committed" → "committed", "just announced" → "announced", "recently" removed or replaced with dates.</li>
+<li><strong>No verbatim quotes</strong> — all paraphrased (NVIDIA SVP, LightCounting headline).</li>
+<li><strong>No headers in spoken script</strong> — continuous spoken content throughout; headers only in Editor Notes.</li>
+<li><strong>"Picks and shovels" check</strong> — confirmed clean; uses "infrastructure underneath the infrastructure."</li>
+</ul>
+</div>
+
+<div class="script">
+
+<p>Everyone's fighting over which AI chip to buy. NVIDIA, AMD, Broadcom. But here's what most investors are missing. The GPUs aren't the bottleneck anymore. The bottleneck is the cable connecting them.</p>
+
+<div class="broll">[B-roll: data center interior, close-up of copper cable bundles]</div>
+
+<p>Right now, AI data centers use copper wires to move data between thousands of GPUs. And at 1.6 terabits per second — which happens to be the speed required for next-gen AI training — copper generates too much heat, eats too much power, and physically cannot keep up. The fix is silicon photonics. Instead of pushing data through copper with electrical signals, you push it through using light — photons instead of electrons — on a regular silicon chip. That means you can manufacture these in existing semiconductor fabs, making them far more scalable and cheaper than traditional fiber optics. The result is 3.5 times lower power consumption. And when you're running a data center that consumes as much electricity as a small city, that's not incremental. That's transformational.</p>
+
+<div class="broll">[B-roll: fiber optic light pulses, silicon wafer manufacturing]</div>
+
+<p>The market reflects this. Silicon photonics is roughly a $3 billion market today, growing at 25 to 29% annually depending on which research firm you look at. Conservative estimates put it at $10 billion by 2030. The most aggressive say nearly $29 billion by 2034. NVIDIA committed to co-packaged silicon photonics at GTC 2025, and the entire supply chain is following.</p>
+
+<div class="broll">[Show visual: silicon_photonics_visuals/market_growth.html]</div>
+
+<p>So in this video, I'm going to walk you through the entire supply chain — from the foundries that manufacture these chips, to the companies building the optical components, all the way up to the architects designing the systems. Nine companies plus a wild card. And at the very end, I'll give you my personal ranking from strongest to weakest. But before we get into it, if you get any value from my research, please consider pressing the like button so my channel can continue to grow. I am not a financial advisor. This is not financial advice. This is my research and my perspective as an investor.</p>
+
+<div class="broll">[B-roll: transition graphic]</div>
+<div class="broll">[Show visual: silicon_photonics_visuals/supply_chain.html]</div>
+
+<p>Everything in silicon photonics starts with manufacturing. Somebody has to take a silicon wafer and etch photonic circuits onto it — lasers, waveguides, modulators — all at the nanometer scale. And in this space, two public companies stand out.</p>
+
+<p>Let's get started with our first company of Tower Semiconductor, ticker TSEM, which happens to be a specialty analog foundry. They don't design chips — they manufacture them for other companies. Think of them as the factory floor for silicon photonics. And their silicon photonics and RF infrastructure segment had a breakout year. Revenue in that segment grew 75% in 2025 compared to 2024. That was their fastest-growing business by a wide margin.</p>
+
+<div class="broll">[B-roll: TSEM stock chart + company logo]</div>
+
+<p>Total revenue for 2025 came in at $1.57 billion, up about 9% year over year. They're guiding Q1 2026 to $412 million, plus or minus 5%. And their updated 2028 model is targeting $2.84 billion in revenue. So they're projecting to nearly double the business in about three years. But here's the big move. Tower committed $920 million in CapEx for 2026 and 2027, specifically aimed at 5x-ing their silicon photonics and SiGe capacity. And over 70% of that new capacity is already reserved or prepaid by customers. That's a huge commitment for a company doing $1.6 billion in revenue. For perspective, that CapEx is more than half their annual revenue going into one bet. But when 70% of the capacity is already spoken for before you even build it, that tells you something about demand. They also expanded their collaboration with Innolight for 100G through 800G optical modules, which tells me the customer base is diversifying beyond NVIDIA. On February 5th, 2026, NVIDIA announced a direct partnership with Tower to build 1.6 Terabit optical modules designed specifically for NVIDIA networking protocols — that's a massive endorsement.</p>
+
+<div class="broll">[Screenshot: TSEM Q4 2025 earnings highlights]</div>
+
+<p>Now here's the risk. That $920 million CapEx is enormous. If AI infrastructure spending slows, or if TSMC enters and commoditizes the manufacturing, Tower could end up overbuilt with expensive, underutilized fabs. Customer concentration is real too — a handful of hyperscalers control the buying. But right now, with the NVIDIA partnership, the 75% SiPho growth, and essentially zero long-term debt, the demand signals are about as strong as you'll find in this space. The stock happens to be trading at a forward P/E around 45, and analysts have a consensus target of roughly $157 with Benchmark at $165. At current prices around $130 to $135, that implies roughly 15 to 25% upside depending on which estimate you use.</p>
+
+<div class="broll">[Screenshot: TipRanks TSEM forecast]</div>
+
+<p>Our next company is GlobalFoundries, ticker GFS, and most people don't think of them as a silicon photonics play. But they should. GlobalFoundries is the third-largest foundry in the world. And on their Q4 2025 earnings call, GFS reported they doubled silicon photonics revenue within communications and data center to over $200 million in 2025, and they expect to nearly double it again in 2026. So we're talking $200 million going to roughly $400 million.</p>
+
+<div class="broll">[B-roll: GFS stock chart + company logo]</div>
+
+<p>Now in the context of GFS's total revenue — about $6.8 billion — silicon photonics is still small. Maybe 3% of the total. You're buying a big company for a small but fast-growing division. And the overall revenue growth has been basically flat, up 0.6% year over year. That's the bear case — the base business isn't exciting. But the valuation is one of the more attractive in this space. Forward P/E around 26. PEG ratio of 0.89. They're sitting on $1.8 billion in cash and generating over $1 billion in free cash flow. The bull case is that GFS gives you silicon photonics exposure on top of a stable, diversified foundry business. You need a little patience with the core. And they expanded to 46,000 wafers per month specifically for silicon photonics production, so they're putting real capacity behind the growth story. Analysts have a consensus target around $51, which at current levels gives you roughly 10 to 15% upside.</p>
+
+<div class="broll">[Screenshot: TipRanks GFS forecast]</div>
+
+<p>Now before we leave the foundry layer, I need to mention the wild card, and that's TSMC. The 800-pound gorilla. TSMC announced their COUPE platform for co-packaged optics mass production in 2026. And this cuts both ways. TSMC entering silicon photonics is a massive validation of the technology. But it's also a competitive threat to Tower and GlobalFoundries. When TSMC enters any market, they tend to drive prices down. Great for adoption. Not great for smaller foundries trying to maintain margins. This is probably the single biggest risk hanging over the foundry layer, and it's something I'd keep an eye on.</p>
+
+<p>So the foundries make the chips. But somebody has to build the actual optical components that go on top of those chips. The lasers, the transceivers, the parts that actually convert electrical signals into light. Without these companies, you've got a silicon chip with no way to move photons.</p>
+
+<p>Let's move on to Coherent, ticker COHR. Coherent — formerly II-VI — happens to be one of the largest optical transceiver makers globally. They make the lasers, the photonic components, and the transceivers that convert electrical signals to optical signals. If Tower makes the foundry, Coherent makes the parts that go on top of it.</p>
+
+<div class="broll">[B-roll: COHR stock chart + company logo]</div>
+
+<p>And the numbers are impressive. Revenue hit a record $1.5 billion in their most recent quarter, up 24% year over year. The full-year revenue run rate is now around $6.3 billion and climbing. And they're seeing acceleration in 800G and 1.6T transceiver demand heading into calendar 2026. They're also expanding into optical circuit switches for AI data centers and diamond silicon carbide composites for cooling. So it's not a one-trick business.</p>
+
+<p>Now the trailing P/E is over 200, which looks scary on the surface. But the forward P/E drops to about 30. And the PEG ratio is 0.34. That tells you the market expects significant earnings growth, and the price relative to that growth is actually reasonable. The bear case is that Coherent carries about $3.5 billion in long-term debt from the II-VI merger, and the business is diversified enough that you're not getting a pure silicon photonics play. But if the 1.6T transition plays out the way the industry expects, Coherent is sitting right in the middle of it. Analysts give Coherent a consensus target around $251, which at current prices implies roughly 15 to 20% upside.</p>
+
+<div class="broll">[Screenshot: TipRanks COHR forecast]</div>
+<div class="broll">[Show visual: silicon_photonics_visuals/revenue_comparison.html]</div>
+
+<p>The next company is Lumentum, ticker LITE, and they're a name that keeps coming up in my research on the component side. Lumentum makes the lasers and optical components that go into silicon photonics modules. They're a key supplier of externally modulated lasers for 800G and 1.6T transceivers. Think of them as the supplier that feeds the component layer — the building blocks that make the whole optical stack work.</p>
+
+<div class="broll">[B-roll: LITE stock chart + company logo]</div>
+
+<p>And the growth is fast. Revenue came in at $1.65 billion for fiscal 2025, up 21% year over year. But the trailing twelve-month run rate is about $2.1 billion, which is up over 52% compared to the prior period. That's serious acceleration. But here's where I have to be honest with you. The valuation makes me nervous. Forward P/E of about 95. Price-to-sales over 19. Price-to-book is 47. And the free cash flow is still negative — negative $105 million over the trailing twelve months. So you're paying a big premium for growth that hasn't fully materialized on the bottom line yet. The stock has also already had a massive run, from about $46 at the 52-week low to the $500 to $600 range. The telecom segment, which is the non-AI side, has been weak. And they carry about $2.6 billion in long-term debt. That said, if the 1.6T ramp is bigger than expected, this could still have room to run. Analysts have a target around $566, which at current levels suggests modest upside, but I'd personally watch for a pullback before building a position.</p>
+
+<div class="broll">[Screenshot: TipRanks LITE forecast]</div>
+
+<p>So we've covered the foundries making the chips and the component makers building the optical parts. Now we move up to the architects — the companies designing the actual networking systems, the ones deciding how all these pieces fit together. In a lot of ways, this is where the real power sits in the supply chain.</p>
+
+<p>My next company happens to be Marvell Technology, ticker MRVL, and they made a move in December 2025 that I think is under-appreciated. Marvell is a data infrastructure semiconductor company — networking, storage, custom compute. They announced the acquisition of Celestial AI for over $5 billion. Celestial AI makes something called Photonic Fabric, a technology that claims 25 times greater bandwidth at 10 times lower latency than standard co-packaged optics using vertical 3D photonic packaging directly on the processor.</p>
+
+<div class="broll">[Screenshot: Marvell + Celestial AI acquisition press release]</div>
+
+<p>Now $5 billion is a lot of money for a pre-revenue company. But Marvell's leadership has said that every connection point in the data center has to move from copper to optical. If that's true — and the physics suggests it is — then owning the most advanced photonic interconnect technology could be a huge competitive advantage. The risk is integration. Acquiring a pre-revenue deep-tech startup for $5 billion-plus is a big bet. If Celestial AI's photonic fabric doesn't work at scale, that's a lot of money out the door.</p>
+
+<p>But here's what I like about the valuation. Forward P/E is about 23. PEG ratio is 1.5. Revenue run rate is $7.8 billion, up 45% year over year. And they're generating $1.4 billion in free cash flow. I do need to be transparent — Marvell is technically unprofitable on a GAAP basis because of amortization from prior acquisitions. But on a cash flow basis, the business is healthy. Analysts give Marvell about 50% upside over the next 12 months with a consensus target around $117.</p>
+
+<div class="broll">[Screenshot: TipRanks MRVL forecast]</div>
+
+<p>Let's move on to Broadcom, ticker AVGO, which happens to be the industry leader in co-packaged optics today. They announced their third-generation CPO with 200 Gigabit-per-lane capability and committed to a fourth generation at 400G per lane. They've already shipped over 20 million 100G optical channels and are targeting 5 million 800G units.</p>
+
+<div class="broll">[B-roll: AVGO stock chart + company logo]</div>
+
+<p>Now here's the thing with Broadcom. Revenue is $63.9 billion. They generated $26.9 billion in free cash flow. Gross margins are nearly 68%. This is an absolute machine. Revenue grew 24% year over year — for a company this size, that's remarkable. The forward P/E is about 32. PEG ratio is 0.9. But silicon photonics is a rounding error in Broadcom's total revenue. You're not buying Broadcom for SiPho exposure specifically. You're buying one of the best semiconductor companies in the world, and the co-packaged optics leadership is a bonus. If you want exposure to this theme without losing sleep, this is probably the one. Analysts give Broadcom roughly 20% upside with a target around $457.</p>
+
+<div class="broll">[Screenshot: TipRanks AVGO forecast]</div>
+
+<p>And clearly, a company I have to highlight is NVIDIA, ticker NVDA. Now I'm not including NVIDIA as a silicon photonics pick exactly, and here's why. NVIDIA is the demand creator, not the supply chain play. But their commitment to co-packaged optics is the single biggest validation of this entire thesis. At GTC 2025, Jensen Huang unveiled the Spectrum-X and Quantum-X networking switches, both built with co-packaged silicon photonics. That was NVIDIA telling the entire industry that the future of AI networking runs on light, not copper. And on February 5th, 2026, NVIDIA announced the direct partnership with Tower Semiconductor to build 1.6 Terabit optical modules designed specifically for NVIDIA networking protocols. NVIDIA's SVP of Networking has said the explosive growth of AI is driving the need for a completely new class of high-speed, scalable networking, and that they're working with Tower to make it happen. If you've followed NVIDIA for any amount of time, you know the pattern. When Jensen builds a technology into the NVIDIA stack, the entire supply chain follows. It happened with CUDA. It happened with InfiniBand. And now it's happening with silicon photonics.</p>
+
+<div class="broll">[B-roll: NVIDIA GTC networking demo footage]</div>
+<div class="broll">[Screenshot: Tower Semi + NVIDIA press release — towersemi.com]</div>
+
+<p>The numbers today are, well, insane. There's really no other word for it. Revenue of $130 billion, up 114% year over year. $60 billion in free cash flow. Forward P/E of about 24. For a company growing this fast, that's actually not unreasonable. PEG ratio of 0.7. But silicon photonics is a strategic initiative for NVIDIA, not a revenue driver right now. You'd be buying NVIDIA for AI compute dominance, for the networking platform, for the ecosystem lock-in. The SiPho angle is a bonus, not the thesis. Analysts give NVIDIA roughly 40% upside with a target around $254.</p>
+
+<div class="broll">[Screenshot: TipRanks NVDA forecast]</div>
+
+<p>Now we've covered the foundries, the component makers, and the architects. But there are two more companies that come up in every silicon photonics conversation, and I think you deserve to hear about them because the full picture matters. These are the legacy players — large, established companies coming at this from a very different position.</p>
+
+<p>The next company is Intel, ticker INTC, and this one is a little uncomfortable. Because Intel is genuinely a pioneer in silicon photonics. They've been researching this technology since 2004. They demonstrated the first fully integrated optical I/O chiplet in January 2025. They have deep IP. But Intel's patent filings in silicon photonics have dropped significantly since 2023. They're still at the R&D stage while TSMC is planning mass production. And the company as a whole is struggling. Revenue has declined from $79 billion in 2021 down to about $53 billion. Net income was negative $267 million in the most recent year, and the year before that was a loss of nearly $19 billion.</p>
+
+<div class="broll">[B-roll: INTC stock chart + company logo]</div>
+
+<p>The stock moved from around $18 at the lows to the mid-$50s. But the forward P/E is 91, which is hard to justify when the business is unprofitable and revenue is flat to declining. If Intel Foundry Services gains traction and they can leverage their SiPho IP as a differentiator, there's a story there. But the company has much bigger problems to solve first. Analysts have a target around $47, which actually implies downside from current levels.</p>
+
+<div class="broll">[Screenshot: TipRanks INTC forecast]</div>
+
+<p>And the final company on this list is Cisco, ticker CSCO. Now Cisco is one of those names that most investors already know, and they actually made a smart move back in 2021 when they acquired Acacia Communications for about $4.5 billion. Acacia makes silicon photonics-based coherent optics, and Cisco has been integrating that technology into their routers and switches. The financials are solid from a business quality standpoint. Revenue is about $57 billion. Forward P/E of 18. They generate over $13 billion in free cash flow. Gross margins are 65%. This is a profitable, stable company. But Acacia is a tiny piece of Cisco's overall business. Silicon photonics exposure relative to total revenue is minimal. And Cisco tends to move slowly. They're not the company that's going to lead the 1.6T charge — they'll adopt it, but they won't drive it. Analysts give Cisco about 15% upside with a target around $89.</p>
+
+<div class="broll">[Screenshot: TipRanks CSCO forecast]</div>
+
+<p>Alright, so I promised you my personal ranking — strongest to weakest — and here it is. This is how I'd stack every company we covered, based on their silicon photonics exposure, the growth trajectory, the valuation, and the risk profile.</p>
+
+<div class="broll">[Show visual: silicon_photonics_visuals/ranking_reveal.html — hold 15-20 seconds]</div>
+
+<p>Number one, Tower Semiconductor, TSEM. Closest thing to a pure play. NVIDIA partner. Zero debt. 75% SiPho segment growth. This is my highest-conviction name on the list. Number two, Coherent, COHR. Component leader in the middle of the 1.6T transition. Record revenue. PEG ratio of 0.34. Hard to ignore at this growth rate. Number three, Marvell, MRVL. The Celestial AI acquisition could be a leapfrog move. Forward P/E of 23 gives you the most reasonable valuation among the top names, but integration risk is real. Number four, GlobalFoundries, GFS. The dark horse. SiPho revenue doubling year over year inside a stable foundry. PEG of 0.89. Best value play on this list, you need patience with the flat base business. Number five, Broadcom, AVGO. CPO leader inside a machine of a company. If you want this theme without losing sleep, this is it. Number six, Lumentum, LITE. Great position, great growth, but the valuation is stretched. Forward P/E of 95 with negative free cash flow means you need the 1.6T ramp to be bigger than expected. Number seven, NVIDIA, NVDA. The reason this entire thesis exists. But you're buying NVIDIA for AI compute, not for SiPho specifically. Number eight, Intel, INTC. A genuine pioneer that's losing its lead. The company has much bigger problems to solve. Number nine, Cisco, CSCO. Solid business, tiny SiPho exposure. If you already own it, great. But I wouldn't buy Cisco specifically for this theme. And TSMC is the wild card that both validates the entire thesis and threatens the margins of the foundry players.</p>
+
+<p>Here's how I think about this whole space. Everybody talks about the AI infrastructure trade — buy the companies building the infrastructure instead of trying to pick which AI model wins. And that's smart. But silicon photonics is the infrastructure underneath the infrastructure. It's the foundation that everything else gets built on top of. Every hyperscaler — AWS, Google, Meta, Microsoft — needs this technology. The physics demands it. Copper can't scale. Light can. And 2026 looks like the inflection year.</p>
+
+<p>Well, I also want to mention STMicroelectronics. They re-entered silicon photonics in early 2025 with their PIC100 process, built in collaboration with AWS at their 300mm fab in France. The fact that AWS is investing directly in the silicon photonics supply chain tells you something about the demand side. But STM isn't really a way to play this theme as an investor — SiPho is a small piece of their business. I mention it because it's another data point confirming that the hyperscalers are all moving in this direction.</p>
+
+<p>I happen to believe that the companies building the foundation always matter more than the ones standing on top of it. That's true in construction, it's true in technology, and right now it's true in AI.</p>
+
+<p>I'll have links to all the research and resources I used in the description below so you can dig into these yourself. As always, thanks so much for watching.</p>
+
+</div>
+
+<div class="editor-notes">
+<h2>Editor Notes — Post-Script</h2>
+
+<h3>B-Roll / Visual Sequence</h3>
+<ul>
+<li><strong>0:00–0:15</strong> — Data center interior, close-ups of copper cables and fiber optics</li>
+<li><strong>0:15–0:30</strong> — Quick-cut montage: NVIDIA–Tower press release headline + GFS earnings headline</li>
+<li><strong>Intro section</strong> — Fiber optic light pulse footage, silicon wafer manufacturing, clean room</li>
+<li><strong>GTC section</strong> — Jensen Huang GTC 2025 keynote footage (networking segment, placed in NVDA segment)</li>
+<li><strong>Throughout stock segments</strong> — Company logos, stock charts, building/HQ footage</li>
+<li><strong>Closing</strong> — Data center exterior wide shot</li>
+</ul>
+
 <h3>Screenshots to Capture</h3>
-<p>1. <strong>NVIDIA Technical Blog</strong> — Power consumption comparison graphic (developer.nvidia.com/blog/a-new-era-in-data-center-networking...)</p>
-<p>2. <strong>Tower Semi + NVIDIA PR</strong> — towersemi.com/2026/02/05/02052026/</p>
-<p>3. <strong>TSEM Q4 earnings</strong> — Benzinga article headline + key numbers</p>
-<p>4. <strong>StockAnalysis.com</strong> — Forecast pages for: TSEM, COHR, MRVL, GFS, AVGO, LITE, NVDA, INTC, CSCO (9 screenshots)</p>
-<p>5. <strong>GFS Q4 earnings transcript</strong> — Quote about doubling SiPho revenue (Motley Fool)</p>
-<p>6. <strong>Marvell + Celestial AI</strong> — Acquisition press release headline</p>
-<p>7. <strong>Broadcom CPO announcement</strong> — IR page showing 3rd-gen CPO details</p>
-<p>8. <strong>LightCounting</strong> — "2026: The Year of Silicon Photonics" newsletter headline</p>
-<br>
-<h3>Graphics to Create</h3>
-<p>1. <strong>Market size comparison</strong> — Simple bar/growth chart: $3B (2025) → $10-29B (2030-2034) with CAGR</p>
-<p>2. <strong>Copper vs Silicon Photonics comparison table</strong> — Speed, power, cost, distance</p>
-<p>3. <strong>CapEx commitment graphic for TSEM</strong> — $920M, 5x capacity, 70%+ reserved</p>
-<p>4. <strong>Supply chain ecosystem graphic</strong> — Visual showing Foundries → Component Makers → Architects → End Users with company logos in each layer</p>
-<p>5. <strong>Personal ranking graphic</strong> — All 9 stocks ranked 1-9 with ticker, one-line rationale, forward P/E</p>
-<p>6. <strong>1.6T speed comparison</strong> — Visual showing 1,600x home internet speed</p>
-<br>
+<ul>
+<li>NVIDIA Technical Blog — Power consumption comparison (developer.nvidia.com)</li>
+<li>Tower Semi + NVIDIA PR — towersemi.com/2026/02/05/</li>
+<li>TSEM Q4 2025 earnings highlights — Benzinga</li>
+<li>TipRanks forecast pages for all 9 tickers: TSEM, GFS, COHR, LITE, MRVL, AVGO, NVDA, INTC, CSCO</li>
+<li>GFS Q4 earnings transcript — SiPho revenue (Motley Fool)</li>
+<li>Marvell + Celestial AI acquisition press release</li>
+<li>Broadcom CPO announcement — IR page</li>
+<li>LightCounting — 2026 Year of Silicon Photonics headline</li>
+</ul>
+
+<h3>HTML Visuals to Display On-Screen</h3>
+<ul>
+<li><code>silicon_photonics_visuals/market_growth.html</code> — Market size $3B → $10-29B with CAGR bands</li>
+<li><code>silicon_photonics_visuals/supply_chain.html</code> — Pyramid: Foundries → Components → Architects → Legacy</li>
+<li><code>silicon_photonics_visuals/revenue_comparison.html</code> — Revenue/growth comparison across all 9 tickers</li>
+<li><code>silicon_photonics_visuals/ranking_reveal.html</code> — Final ranking 1-9 with ticker, rationale, forward P/E</li>
+</ul>
+
 <h3>Timing Notes</h3>
-<p>- Script reads at approximately 4,200 words — target 22-25 minutes at speaking pace</p>
-<p>- Foundry stocks get heavy treatment (3-4 min each)</p>
-<p>- Component maker stocks get medium-heavy treatment (2-3 min each)</p>
-<p>- Architect stocks get medium treatment (2 min each)</p>
-<p>- Legacy players get brief-but-honest treatment (1-2 min each)</p>
-<p>- The personal ranking near the end is a key moment — hold the graphic on screen for 15-20 seconds</p>
-<p>- "Picks and shovels within picks and shovels" line in the wrap is the quotable moment — text overlay</p>
-<p>- The supply chain walkthrough should feel like a journey — each transition between layers should breathe</p>
-<p>- The transparency angle ("I'm not going to hide a company from you") should feel genuine, not performative</p>
-<br>
-</body></html>
+<ul>
+<li>Script is ~3,600 words — target 20–23 minutes at speaking pace</li>
+<li>Intro cut from ~800 words to ~400 words</li>
+<li>NVIDIA/Jensen detail moved from intro to NVDA segment</li>
+<li>Foundry stocks (TSEM, GFS): 3–4 min each</li>
+<li>Component makers (COHR, LITE): 2–3 min each</li>
+<li>Architects (MRVL, AVGO, NVDA): 2–3 min each</li>
+<li>Legacy (INTC, CSCO): 1–2 min each</li>
+<li>Ranking reveal — hold graphic 15–20 seconds</li>
+</ul>
+</div>
+
+</body>
+</html>

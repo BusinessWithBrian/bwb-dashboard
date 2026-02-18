@@ -1,15 +1,47 @@
 {
-  "generated_at": "2026-02-16T17:03:33.089729+00:00",
+  "generated_at": "2026-02-17T10:10:03.715236+00:00",
   "pipeline": [
+    {
+      "video_slug": "options_trading_level2",
+      "current_stage": "complete",
+      "ready_for_recording": true,
+      "last_updated": "2026-02-17T10:10:03.715223+00:00",
+      "blocking_issue": ""
+    },
+    {
+      "video_slug": "schd_rotation_stress_test",
+      "current_stage": "complete",
+      "ready_for_recording": true,
+      "last_updated": "2026-02-17T10:10:03.715231+00:00",
+      "blocking_issue": ""
+    },
     {
       "video_slug": "silicon_photonics",
       "current_stage": "final_delivery_in_progress",
       "ready_for_recording": false,
-      "last_updated": "2026-02-16T17:03:33.089724+00:00",
+      "last_updated": "2026-02-17T10:10:03.715234+00:00",
       "blocking_issue": "delivery requirements not complete"
     }
   ],
   "delivery": [
+    {
+      "video_slug": "options_trading_level2",
+      "script_final_docx": false,
+      "editorial_package_simple_md": false,
+      "visual_handoff_json": false,
+      "delivery_manifest_json": true,
+      "nas_copy_status": "unknown",
+      "ready_for_recording": true
+    },
+    {
+      "video_slug": "schd_rotation_stress_test",
+      "script_final_docx": false,
+      "editorial_package_simple_md": false,
+      "visual_handoff_json": true,
+      "delivery_manifest_json": true,
+      "nas_copy_status": "unknown",
+      "ready_for_recording": true
+    },
     {
       "video_slug": "silicon_photonics",
       "script_final_docx": false,
@@ -22,6 +54,22 @@
   ],
   "multiplication": [
     {
+      "video_slug": "options_trading_level2",
+      "shorts_concepts_md": true,
+      "newsletter_segment_md": true,
+      "patreon_companion_md": true,
+      "social_hooks_md": true,
+      "multiplication_manifest_json": true
+    },
+    {
+      "video_slug": "schd_rotation_stress_test",
+      "shorts_concepts_md": true,
+      "newsletter_segment_md": true,
+      "patreon_companion_md": true,
+      "social_hooks_md": true,
+      "multiplication_manifest_json": true
+    },
+    {
       "video_slug": "silicon_photonics",
       "shorts_concepts_md": false,
       "newsletter_segment_md": false,
@@ -33,7 +81,7 @@
   "feedback": {
     "pending_24h": 0,
     "pending_7d": 0,
-    "pending_30d": 0,
+    "pending_30d": 11,
     "overdue": 0
   }
 }
